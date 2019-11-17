@@ -111,7 +111,9 @@ header div h1 {
     text-align: center;
     display: block;
     top: 60%;
-    font-size: 16px;
+    font-size: 18px;
+    font-family: 'Uncial Antiqua', cursive;
+
 }
 
 header div h1 span {
@@ -131,12 +133,18 @@ header div h1 span {
 .about h1 {
     display: block;
     width: 100%;
+    margin: 2.5vh 0;
     text-align: center;
-    line-height: 10vh;
+    line-height: 8vh;
     font-size: 36px;
     color: white;
-    background-color: #999;
+    /* background-color: #594D3E; */
+    /* background-color: rgba(0, 0, 0, 0.1); */
     letter-spacing: 1px;
+    /* font-family: 'IM Fell English SC', serif; */
+    /* font-family: 'Amarante', cursive; */
+    font-family: 'Metamorphous', cursive;
+    /* text-transform: uppercase; */
 }
 
 .about img {
@@ -150,14 +158,14 @@ header div h1 span {
 .about p {
     display: block;
     margin: 0 5% 0 0;
-    text-align: justify;
+    text-align: justif18y;
     color: #fff;
-    font-size: 19px;
+    font-size: 18px;
     line-height: 30px;
-
+    font-family: roboto;
 }
 
 body {
-    /* background-color: #E0d3aF; */
-    background-color: #999;
+    background-color: #8C8074;
+    /* background-color: #999; */
 }
