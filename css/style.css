@@ -290,6 +290,60 @@ header div h1 span {
     color: #8C8074
 }
 
+/* Rzemiosło */
+
+.collaboration {
+    overflow: hidden;
+    height: 90vh;
+    width: 100%;
+    position: absolute;
+    top: 390vh;
+}
+
+.collaboration img {
+    display: block;
+    position: absolute;
+    max-width: 100%;
+}
+
+.collaboration p {
+    display: block;
+    position: absolute;
+    color: white;
+    top: 10vh;
+    left: 5%;
+    max-width: 23%;
+    font-size: 22px;
+    line-height: 36px;
+    text-align: justify;
+    background-color: rgba(0, 0, 0, 0.7);
+    font-family: roboto;
+    padding: 10px 15px;
+}
+
+.collaboration button {
+    position: absolute;
+    bottom: 6vh;
+    right: 0;
+    border: none;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.collaboration button a {
+    display: block;
+    text-decoration: none;
+    font-size: 28px;
+    padding: 10px 100px 10px 25px;
+    color: #fff;
+    transition: .3s;
+    font-family: 'Metamorphous', cursive;
+
+}
+
+.collaboration button a:hover {
+    padding: 10px 175px 10px 50px;
+}
+
 body {
     background-color: #8C8074;
     /* background-color: #999; */
