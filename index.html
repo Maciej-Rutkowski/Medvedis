@@ -85,27 +85,29 @@
       prelekcje historyczne i potrzebujesz naszego wsparcia? <br>Możemy zorganizować pokazy walk, rzemiosła oraz
       życia codziennego we wczesnym średniowieczu. Skontaktuj się z nami aby indywidualnie omówić szczegóły współpracy.
     </p>
-    <button><a href="">Kontakt</a></button>
+    <button><a href="">Współpraca</a></button>
   </section>
   <section class="contact">
     <h1>Kontakt</h1>
-    <div class="media clearfix"><a href=""><i class="fab fa-facebook-messenger"></i> Massenger</a>
+    <div class="media clearfix"><a href="https://m.me/druzyna.medvedis"><i class="fab fa-facebook-messenger"></i>
+        Massenger</a>
       <a href=""><i class="fab fa-instagram"></i> Instagram</a>
       <a href=""><i class="far fa-envelope"></i> E-mail</a></div>
     <form class="form" id="contactForm" method="post" action="/send-scripts.php">
       <div class="form-row">
         <label for="field-name">Name*</label>
         <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole"
-          pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+">
+          pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+" placeholder="Imię">
       </div>
       <div class="form-row">
         <label for="field-email">Email*</label>
         <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email"
-          pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
+          pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="E-mail">
       </div>
       <div class="form-row">
         <label for="field-message">Message*</label>
-        <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"></textarea>
+        <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"
+          placeholder="Wpisz wiadomość"></textarea>
       </div>
       <div class="form-row">
         <button type="submit" class="submit-btn">
@@ -115,6 +117,7 @@
     </form>
   </section>
   <footer></footer>
+  <script src="main.js"></script>
 </body>
 
 </html>
