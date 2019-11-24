@@ -25,26 +25,26 @@
 
 <body>
   <div class="menu">
-    <img src="Images/logo.png" alt="">
+    <img id="home" src="Images/logo.png" alt="">
     <nav>
       <ul>
-        <li><a href="">Home</a></li>
-        <li><a href="">Drużyna</a></li>
-        <li><a href="">Galeria</a></li>
-        <li><a href="">Nabór</a></li>
+        <li><a id="home" href="#">Home</a></li>
+        <li><a id="about" href="#">Drużyna</a></li>
+        <li><a id="gallery" href="#">Galeria</a></li>
+        <li><a id="recruitment" href="#">Nabór</a></li>
         <!-- <li><a href="">Rzemiosło</a></li> -->
-        <li><a href="">Współpraca</a></li>
-        <li><a href="">Kontakt</a></li>
+        <li><a id="collaboration" href="#">Współpraca</a></li>
+        <li><a id="contact" href="#">Kontakt</a></li>
       </ul>
     </nav>
   </div>
-  <header>
+  <header data-section="home" class="home">
     <img class="shields" src="Images/main.jpg" alt="">
     <div><img class="whitebear" src="Images/logo_white.png" alt="">
       <h1>Drużyna Piastowska <br><span>Medvedis</span></h1>
     </div>
   </header>
-  <section class="about">
+  <section data-section="about" class="about">
     <h1>Drużyna</h1>
     <div class="clearfix"><img src="Images/Team.jpg" alt="">
       <p>Mimo że nasza drużyna jest w miarę nowa, to my nie jesteśmy nowi w rekonstrukcji historycznej
@@ -63,11 +63,11 @@
     </div>
     <button><a href="">Poznaj nas!</a></button>
   </section>
-  <section class="gallery">
+  <section data-section='gallery' class="gallery">
     <img src="Images/Battle.jpg" alt="">
     <button><a href="">Zobacz galerię</a></button>
   </section>
-  <section class="recruitment">
+  <section data-section="recruitment" class="recruitment">
     <h1>Nabór</h1>
     <div>
       <img src="Images/JoinUs.jpg" alt="">
@@ -79,44 +79,33 @@
     <button><a href="">Dołącz do nas!</a></button>
 
   </section>
-  <section class="collaboration">
+  <section data-section='collaboration' class="collaboration">
     <img src="Images/collaboration.jpg" alt="">
-    <p>Masz ciekawy projekt do którego planujesz nas zaprosić? Chcesz abyśmy uświetnili Twoje wydarzenie? Organizujesz
-      prelekcje historyczne i potrzebujesz naszego wsparcia? <br>Możemy zorganizować pokazy walk, rzemiosła oraz
-      życia codziennego we wczesnym średniowieczu. Skontaktuj się z nami aby indywidualnie omówić szczegóły współpracy.
+    <p>Masz ciekawy projekt do którego planujesz nas zaprosić? Chcesz abyśmy uświetnili Twoje wydarzenie?
+      Organizujesz
+      prelekcje historyczne i potrzebujesz naszego wsparcia? <br>Możemy zorganizować pokazy walk,
+      rzemiosła oraz
+      życia codziennego we wczesnym średniowieczu. Skontaktuj się z nami aby indywidualnie omówić szczegóły
+      współpracy.
     </p>
-    <button><a href="">Współpraca</a></button>
+    <button id='contact'><a href="#">Współpraca</a></button>
   </section>
-  <section class="contact">
+  <section data-section="contact" class="contact">
     <h1>Kontakt</h1>
     <div class="media clearfix"><a href="https://m.me/druzyna.medvedis"><i class="fab fa-facebook-messenger"></i>
         Massenger</a>
       <a href=""><i class="fab fa-instagram"></i> Instagram</a>
+      <a href=""><i class="fab fa-facebook-f"></i> Facebook</a>
       <a href=""><i class="far fa-envelope"></i> E-mail</a></div>
-    <form class="form" id="contactForm" method="post" action="/send-scripts.php">
-      <div class="form-row">
-        <label for="field-name">Name*</label>
-        <input type="text" name="name" required id="field-name" data-error="Wypełnij to pole"
-          pattern="[a-zA-ZąĄććęęłŁńŃóÓśŚżŻŹŹ ]+" placeholder="Imię">
-      </div>
-      <div class="form-row">
-        <label for="field-email">Email*</label>
-        <input type="email" name="email" required id="field-email" data-error="Wpisz poprawny email"
-          pattern="[^@\s]+@[^@\s]+\.[^@\s]+" placeholder="E-mail">
-      </div>
-      <div class="form-row">
-        <label for="field-message">Message*</label>
-        <textarea name="message" required data-error="Musisz wypełnić pole" id="field-message" pattern=".+"
-          placeholder="Wpisz wiadomość"></textarea>
-      </div>
-      <div class="form-row">
-        <button type="submit" class="submit-btn">
-          Wyślij
-        </button>
-      </div>
-    </form>
+    <div class="bear clearfix">
+      <img src="Images/logo_white.png" alt=""></div>
+    <div class="e-mail clearfix">
+      <p>Napisz do nas:<br><span>druzyna.medvedis@gmail.com</span></p>
+    </div>
+    <p class="author">website created by <a href="https://www.linkedin.com/in/maciej-rutkowski-135186198/">Maciej
+        Rutkowski</a></p>
   </section>
-  <footer></footer>
+  <script src="jquery-3.4.1.min.js"></script>
   <script src="main.js"></script>
 </body>
 

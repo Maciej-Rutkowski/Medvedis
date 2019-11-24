@@ -26,6 +26,7 @@ div.menu {
 .menu img {
     height: 10vh;
     padding: 1vh;
+    cursor: pointer;
 }
 
 .menu nav {
@@ -304,6 +305,7 @@ header div h1 span {
     display: block;
     position: absolute;
     max-width: 100%;
+    transform: rotateY(180deg);
 }
 
 .collaboration p {
@@ -312,13 +314,13 @@ header div h1 span {
     color: white;
     top: 10vh;
     left: 5%;
-    max-width: 25%;
+    max-width: 27%;
     font-size: 22px;
     line-height: 32px;
     text-align: justify;
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.6);
     font-family: roboto;
-    padding: 10px 15px;
+    padding: 15px 20px;
 }
 
 .collaboration button {
@@ -352,13 +354,13 @@ header div h1 span {
     top: 480vh;
     background-color: #262626;
     width: 100%;
-    height: 50vh;
+    height: 55vh;
 }
 
 .contact h1 {
     display: block;
     width: 100%;
-    margin: 2.5vh 0;
+    margin: 5vh 0;
     text-align: center;
     line-height: 8vh;
     font-size: 36px;
@@ -368,7 +370,7 @@ header div h1 span {
 }
 
 .contact .media {
-    width: 37%;
+    width: 40%;
     height: 42vh;
     float: left;
     padding: 0 10%;
@@ -381,136 +383,60 @@ header div h1 span {
     text-decoration: none;
     font-size: 22px;
     line-height: 40px;
-    padding: 0 25px;
+    /* padding: 0 25px; */
     margin: 10px;
+    margin-left: 40%;
 }
 
 .contact .media a i {
-    padding-right: 5px;
+    padding-right: 8px;
+    /* width: 25px; */
 }
 
-
-
-/* Formularz */
-.form {
-    margin: auto;
-    width: 100%;
+.contact .bear {
+    width: 28%;
+    float: left;
 }
 
-.form .form-row {
-    margin-bottom: 3vh;
-    width: 100%;
-}
-
-.form .form-row:last-child {
-    margin-bottom: 0;
-}
-
-.form input[type=text],
-.form input[type=email],
-.form textarea {
-    box-shadow: inset 0 1px 5px rgba(0, 0, 0, 0.7);
-    border-radius: 2px;
-    padding: 5px;
-    border: 1px solid #aaa;
+.contact .bear img {
     display: block;
-    max-width: 100%;
-    color: #666;
-    width: 25%;
-}
-
-
-.form input[type=text]:focus,
-.form input[type=email]:focus,
-.form textarea:focus {
-    border-color: #9DC9F5;
-    box-shadow: inset 0 0 0 1px #9DC9F5, inset 0 1px 5px rgba(0, 0, 0, 0.07);
-    outline: none;
-}
-
-.form textarea {
+    position: absolute;
+    /* margin: 5vh auto; */
     height: 15vh;
-}
-
-.form label {
-    display: none;
-}
-
-.form .submit-btn {
-    position: absolute;
-    left: 55%;
-    padding: 8px 25px;
-    background-color: #262626;
-    border: 1px solid white;
-    color: #fff;
-    font-size: 18px;
-    line-height: 18px;
-    transition: 0.3s;
-}
-
-.form .submit-btn:hover {
-    background-color: #fff;
-    color: #262626
-}
-
-@media screen and (max-width:500px) {
-    .form .submit-btn {
-        display: block;
-        width: 100%;
-    }
-}
-
-.form input[type=text].error,
-.form input[type=email].error,
-.form textarea.error {
-    border-color: #E01546;
-}
-
-.field-error {
-    color: #E01546;
-    padding: 3px 0;
-    font-size: 5px;
-}
-
-.elem-is-busy {
-    position: relative;
-    pointer-events: none;
-    opacity: 0.5;
-}
-
-.elem-is-busy::after {
-    position: absolute;
+    top: 40%;
     left: 50%;
-    top: 50%;
-    width: 20px;
-    height: 20px;
-    border-radius: 50%;
-    border: 2px solid rgba(0, 0, 0, 0.2);
-    border-right-color: rgba(0, 0, 0, 0.7);
-    transform: translate(-50%, -50%) rotate(0deg);
-    content: '';
-    animation: rotateSingleLoading 0.3s infinite linear;
-    z-index: 10;
+    transform: translateX(-50%);
 }
 
-@keyframes rotateSingleLoading {
-    from {
-        transform: translate(-50%, -50%) rotate(0deg);
-    }
-
-    to {
-        transform: translate(-50%, -50%) rotate(360deg);
-    }
+.contact .e-mail {
+    display: block;
+    float: right;
+    margin: 2% 12%;
 }
 
-/* Stopka */
+.contact .e-mail p {
+    color: #fff;
+    font-family: 'Metamorphous', cursive;
+    /* font-family: roboto; */
+    font-size: 36px;
+    line-height: 55px;
+}
 
-footer {
+.contact .e-mail p span {
+    font-size: 22px;
+    font-family: roboto;
+}
+
+.contact .author {
+    color: #999;
     position: absolute;
-    top: 530vh;
-    width: 100%;
-    height: 40vh;
-    background-color: #000;
+    bottom: 1%;
+    right: 1%;
+}
+
+.contact .author a {
+    color: #735856;
+    text-decoration: none;
 }
 
 body {
