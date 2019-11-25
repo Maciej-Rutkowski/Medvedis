@@ -72,9 +72,19 @@ div.menu {
     color: white
 }
 
+@media(max-width: 1000px) {
+    .menu a {
+        font-size: 10px;
+    }
+}
+
 /* Home */
 header {
     position: relative;
+    background-image: url("../images/main.jpg");
+    background-position: 0 -10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
     top: 10vh;
     height: 90vh;
     width: 100%;
@@ -86,6 +96,7 @@ header img.shields {
     position: absolute;
     top: -10vh;
     max-width: 100%;
+    min-height: 100vh;
     z-index: -1;
 }
 
@@ -119,6 +130,16 @@ header div h1 {
 
 header div h1 span {
     font-size: 46px;
+}
+
+@media(max-width: 1000px) {
+    header div h1 {
+        font-size: 14px;
+    }
+
+    header div h1 span {
+        font-size: 36px;
+    }
 }
 
 /* About */
@@ -186,8 +207,36 @@ header div h1 span {
     color: #8C8074
 }
 
+@media (max-width: 1500px) {
+    .about p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+}
+
+@media(max-width:1300px) {
+    .about img {
+        max-height: 50vh;
+    }
+}
+
+@media(max-width: 1000px) {
+    .about p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .about button a {
+        font-size: 12px;
+    }
+}
+
 /* Galeria */
 .gallery {
+    background-image: url("../Images/Battle.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
     overflow: hidden;
     height: 90vh;
     width: 100%;
@@ -224,6 +273,22 @@ header div h1 span {
 
 .gallery button a:hover {
     padding: 10px 175px 10px 50px;
+}
+
+@media(max-width: 1400px) {
+    .gallery button a {
+        font-size: 22px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .gallery button a {
+        font-size: 12px;
+    }
+
+    .gallery button a:hover {
+        padding: 10px 115px 10px 30px;
+    }
 }
 
 /* Rekrutacja */
@@ -291,9 +356,34 @@ header div h1 span {
     color: #8C8074
 }
 
-/* Rzemiosło */
+@media(max-width:1300px) {
+    .recruitment img {
+        max-height: 50vh;
+    }
+
+    .recruitment button {
+        bottom: 25vh;
+    }
+}
+
+@media(max-width: 1000px) {
+    .recruitment p {
+        font-size: 10px;
+        line-height: 15px;
+    }
+
+    .recruitment button a {
+        font-size: 12px;
+    }
+}
+
+/* Współpraca */
 
 .collaboration {
+    background-image: url("../Images/collaboration.jpg");
+    background-size: cover;
+    background-position: 0 0;
+    background-repeat: no-repeat;
     overflow: hidden;
     height: 90vh;
     width: 100%;
@@ -344,6 +434,40 @@ header div h1 span {
 
 .collaboration button a:hover {
     padding: 10px 175px 10px 50px;
+}
+
+@media(max-width: 1400px) {
+    .collaboration button a {
+        font-size: 22px;
+    }
+
+    .collaboration p {
+        font-size: 18px;
+        line-height: 26px;
+        max-width: 24%;
+    }
+}
+
+@media(max-width: 1100px) {
+    .collaboration p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .collaboration button a {
+        font-size: 12px;
+    }
+
+    .collaboration p {
+        font-size: 12px;
+        line-height: 18px;
+    }
+
+    .collaboration button a:hover {
+        padding: 10px 115px 10px 30px;
+    }
 }
 
 /* Kontakt */
@@ -437,6 +561,37 @@ header div h1 span {
 .contact .author a {
     color: #735856;
     text-decoration: none;
+}
+
+@media(max-width: 1400px) {
+    .contact .media a {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .contact .e-mail p {
+        font-size: 30px;
+    }
+
+    .contact .e-mail p span {
+        font-size: 20px;
+    }
+}
+
+@media(max-width: 1000px) {
+    .contact .media a {
+        font-size: 14px;
+        line-height: 22px;
+    }
+
+    .contact .e-mail p {
+        font-size: 18px;
+        line-height: 35px;
+    }
+
+    .contact .e-mail p span {
+        font-size: 12px;
+    }
 }
 
 body {
