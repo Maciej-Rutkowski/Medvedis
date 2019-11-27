@@ -73,8 +73,20 @@ div.menu {
 }
 
 @media(max-width: 1000px) {
-    .menu a {
-        font-size: 10px;
+    .menu {
+        display: none;
+    }
+
+    .mobile {
+        display: none;
+    }
+}
+
+.mobile {}
+
+@media(min-width: 1001px) {
+    .mobile {
+        display: none;
     }
 }
 
@@ -133,6 +145,12 @@ header div h1 span {
 }
 
 @media(max-width: 1000px) {
+    header {
+        background-position: 0 0;
+        top: 0;
+        height: 100vh;
+    }
+
     header div h1 {
         font-size: 14px;
     }
@@ -207,27 +225,48 @@ header div h1 span {
     color: #8C8074
 }
 
-@media (max-width: 1500px) {
+@media (max-width: 1600px) {
     .about p {
         font-size: 16px;
         line-height: 26px;
     }
 }
 
-@media(max-width:1300px) {
+@media(max-width:1400px) {
+    .about p {
+        font-size: 14px;
+    }
+
     .about img {
         max-height: 50vh;
     }
 }
 
+
 @media(max-width: 1000px) {
+    .about {
+        height: auto;
+        margin: 0;
+    }
+
+    .about img {
+        max-height: 100vh;
+        width: 90%;
+        margin-bottom: 5vh;
+    }
+
     .about p {
-        font-size: 10px;
-        line-height: 15px;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 5vh 5vh 10vh;
+    }
+
+    .about button {
+        bottom: 0
     }
 
     .about button a {
-        font-size: 12px;
+        font-size: 18px;
     }
 }
 
@@ -242,14 +281,6 @@ header div h1 span {
     width: 100%;
     position: absolute;
     top: 200vh;
-}
-
-.gallery img {
-    display: block;
-    position: absolute;
-    /* margin: 2.5vh auto; */
-    top: -5vh;
-    max-width: 100%;
 }
 
 .gallery button {
@@ -282,8 +313,17 @@ header div h1 span {
 }
 
 @media(max-width: 1000px) {
+    .gallery {
+        top: 230vh;
+        height: 100vh;
+    }
+
+    .gallery button {
+        bottom: 15vh;
+    }
+
     .gallery button a {
-        font-size: 12px;
+        font-size: 22px;
     }
 
     .gallery button a:hover {
@@ -356,9 +396,20 @@ header div h1 span {
     color: #8C8074
 }
 
+@media (max-width: 1600px) {
+    .recruitment p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .recruitment button {
+        left: 22%;
+    }
+}
+
 @media(max-width:1300px) {
     .recruitment img {
-        max-height: 50vh;
+        max-height: 60vh;
     }
 
     .recruitment button {
@@ -366,14 +417,58 @@ header div h1 span {
     }
 }
 
+@media(max-width:1150px) {
+    .recruitment button {
+        left: 15%;
+    }
+}
+
 @media(max-width: 1000px) {
+    .recruitment {
+        top: 320vh;
+        margin: 0;
+    }
+
+    .recruitment img {
+        float: left;
+        width: 90%;
+        max-height: 100vh;
+        margin-bottom: 5vh;
+    }
+
     .recruitment p {
-        font-size: 10px;
-        line-height: 15px;
+        float: left;
+        font-size: 16px;
+        line-height: 22px;
+        margin: 5vh 5vh 10vh;
     }
 
     .recruitment button a {
         font-size: 12px;
+    }
+}
+
+
+@media(max-width: 1000px) {
+
+    .about img {
+        max-height: 100vh;
+        width: 90%;
+        margin-bottom: 5vh;
+    }
+
+    .about p {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 5vh 5vh 10vh;
+    }
+
+    .about button {
+        bottom: 0
+    }
+
+    .about button a {
+        font-size: 18px;
     }
 }
 
@@ -456,6 +551,10 @@ header div h1 span {
 }
 
 @media(max-width: 1000px) {
+    .collaboration {
+        top: 450vh;
+    }
+
     .collaboration button a {
         font-size: 12px;
     }
