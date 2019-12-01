@@ -72,22 +72,162 @@ div.menu {
     color: white
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1100px) {
     .menu {
         display: none;
     }
+}
 
+/* Mobile */
+.burger {
+    position: fixed;
+    width: 35px;
+    height: 27px;
+    top: 20px;
+    right: 20px;
+    cursor: pointer;
+    z-index: 2;
+}
+
+.burger div {
+    position: absolute;
+    width: 100%;
+    height: 5px;
+    background-color: #fff;
+    transition: margin-left .2s, width .2s, top .2s, bottom, opacity .2s .2s, transform .2s .2s;
+}
+
+.burger.active div {
+    background-color: #262626;
+}
+
+.burger:hover div:nth-child(1) {
+    top: 0;
+}
+
+.burger.active div:nth-child(1) {
+    top: calc(50% - 2.5px);
+    transform: rotate(-45deg);
+}
+
+.burger div:nth-child(2) {
+    top: calc(50% - 2.5px);
+}
+
+.burger:hover div:nth-child(2) {
+    opacity: 1;
+    top: calc(50% - 2.5px);
+    margin-left: 25%;
+    width: 75%;
+}
+
+.burger.active div:nth-child(2) {
+    opacity: 0;
+    margin-left: 0;
+    width: 100%;
+}
+
+.burger div:nth-child(3) {
+    bottom: 0;
+}
+
+.burger:hover div:nth-child(3) {
+    margin-left: 50%;
+    width: 50%;
+}
+
+.burger.active div:nth-child(3) {
+    bottom: calc(50% - 2.5px);
+    transform: rotate(45deg);
+    margin-left: 0;
+    width: 100%;
+}
+
+@media(min-width:1101px) {
+    .burger {
+        display: none;
+    }
+}
+
+/* Mobile Nawigacja */
+
+.mobile {
+    display: block;
+    background-color: whitesmoke;
+    position: fixed;
+    width: 100%;
+    top: -100%;
+    z-index: 1;
+    transition: .3s;
+}
+
+.mobile.active {
+    top: 0;
+}
+
+.mobile nav ul {
+    margin: 15px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.mobile nav ul li {
+    list-style: none;
+    margin: 10px
+}
+
+.mobile nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: #262626;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 22px;
+    width: 200px;
+    border-bottom: 1.5px solid transparent;
+    transition: .3s
+}
+
+.mobile nav ul li a:hover {
+    border-bottom: 1.5px solid #262626;
+}
+
+.mobile nav ul li:nth-last-child(1) a {
+    border-bottom: 1.5px #262626 solid;
+}
+
+@media(min-width: 1101px) {
     .mobile {
         display: none;
     }
 }
 
-.mobile {}
-
-@media(min-width: 1001px) {
-    .mobile {
-        display: none;
+@media(orientation:portrait) and (min-height:700px) {
+    .mobile nav ul li {
+        margin: 15px 0;
     }
+
+    .mobile nav ul li a {
+        padding: 10px 0;
+    }
+}
+
+@media(orientation:portrait) and (min-width:700px) {
+    .mobile nav ul li a {
+        font-size: 28px;
+    }
+}
+
+@media(max-height: 400px) {
+    .mobile {
+        top: -150%;
+    }
+
+    .mobile nav ul li {
+        margin: 5px;
+    }
+
 }
 
 /* Home */
@@ -98,17 +238,10 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     top: 10vh;
+    min-height: 90vh;
     height: 90vh;
     width: 100%;
     overflow: hidden;
-    z-index: -1;
-}
-
-header img.shields {
-    position: absolute;
-    top: -10vh;
-    max-width: 100%;
-    min-height: 100vh;
     z-index: -1;
 }
 
@@ -144,7 +277,7 @@ header div h1 span {
     font-size: 46px;
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1100px) {
     header {
         background-position: 0 0;
         top: 0;
@@ -157,6 +290,27 @@ header div h1 span {
 
     header div h1 span {
         font-size: 36px;
+    }
+}
+
+
+@media(orientation:portrait) and (min-width:700px) {
+    header div h1 {
+        font-size: 22px;
+    }
+
+    header div h1 span {
+        font-size: 66px;
+    }
+}
+
+@media(max-height:400px) {
+    header div h1 {
+        font-size: 12px;
+    }
+
+    header div h1 span {
+        font-size: 26px;
     }
 }
 
