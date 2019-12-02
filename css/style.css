@@ -337,10 +337,10 @@ header div h1 span {
     font-family: 'Metamorphous', cursive;
 }
 
-.about img {
+.about div img {
     display: block;
     max-height: 70vh;
-    margin: 0 5%;
+    margin: 0 5% 5%;
     box-shadow: 0 0 15px black;
     float: left;
     border-radius: 8px;
@@ -348,7 +348,7 @@ header div h1 span {
 
 .about p {
     display: block;
-    margin: 0 5% 0 0;
+    margin: 0 5%;
     text-align: justify;
     color: #fff;
     font-size: 18px;
@@ -386,16 +386,27 @@ header div h1 span {
     }
 }
 
-@media(max-width:1400px) {
+@media(max-width: 1400px) {
+    .about div img {
+        max-width: 60%;
+    }
+
     .about p {
         font-size: 14px;
     }
+}
 
-    .about img {
-        max-height: 50vh;
+@media(max-width:1350px) {
+    .about div img {
+        max-height: 60vh;
     }
 }
 
+@media(max-width:1200px) {
+    .about div img {
+        max-height: 50vh;
+    }
+}
 
 @media(max-width: 1000px) {
     .about {
@@ -403,24 +414,106 @@ header div h1 span {
         margin: 0;
     }
 
-    .about img {
+    .about div img {
         max-height: 100vh;
         width: 90%;
         margin-bottom: 5vh;
+        float: none;
     }
 
-    .about p {
+    .about div p {
         font-size: 16px;
         line-height: 22px;
         margin: 5vh 5vh 10vh;
     }
 
     .about button {
-        bottom: 0
+        bottom: 0;
+        margin-top: 10vh;
     }
 
     .about button a {
         font-size: 18px;
+    }
+}
+
+@media(orientation: landscape) and (max-width:850px) {
+    .about {
+        top: 105vh;
+        height: 165vh;
+    }
+
+    .about div img {
+        margin: 5vh 15%;
+        width: 70%;
+        max-height: 80vh;
+    }
+}
+
+@media(max-width: 700px) {
+    .about {
+        height: 185vh;
+    }
+}
+
+@media(max-width:600px) {
+    .about {
+        height: 210vh;
+    }
+}
+
+@media(orientation: portrait) and (max-width:450px) {
+    .about {
+        height: 125vh;
+    }
+
+    .about div img {
+        max-height: 100vh;
+        max-width: 80%;
+        margin: 5vh auto;
+    }
+}
+
+@media(orientation: portrait) and (max-width:400px) {
+    .about {
+        height: 150vh;
+    }
+}
+
+@media(orientation: portrait) and (max-width:350px) {
+    .about {
+        height: 170vh;
+    }
+}
+
+
+
+@media(orientation: portrait) and (min-height:800px) {
+    .about {
+        height: 130vh;
+    }
+}
+
+@media(orientation: portrait) and (min-height:1000px) {
+    .about {
+        height: 95vh;
+    }
+
+    .about div img {
+        float: none;
+        margin: 5vh auto;
+    }
+
+    .about div p {
+        line-height: 26px;
+        font-size: 18px;
+    }
+}
+
+@media(orientation: portrait) and (min-height:1300px) {
+    .about div p {
+        font-size: 26px;
+        line-height: 36px;
     }
 }
 
@@ -468,7 +561,7 @@ header div h1 span {
 
 @media(max-width: 1000px) {
     .gallery {
-        top: 230vh;
+        top: 240vh;
         height: 100vh;
     }
 
@@ -482,6 +575,60 @@ header div h1 span {
 
     .gallery button a:hover {
         padding: 10px 115px 10px 30px;
+    }
+}
+
+@media(max-width:850px) {
+    .gallery {
+        top: 280vh;
+    }
+}
+
+@media(max-width:800px) {
+    .gallery {
+        top: 295vh;
+    }
+}
+
+@media(max-width:600px) {
+    .gallery {
+        top: 330vh;
+    }
+}
+
+@media(orientation: portrait) and (max-width:450px) {
+    .gallery {
+        top: 235vh
+    }
+}
+
+@media(orientation: portrait) and (max-width:400px) {
+    .gallery {
+        top: 260vh
+    }
+}
+
+@media(orientation: portrait) and (max-width:350px) {
+    .gallery {
+        top: 280vh
+    }
+}
+
+@media(orientation: portrait) and (min-height:1000px) {
+    .gallery {
+        top: 240vh
+    }
+}
+
+@media(orientation: portrait) and (min-height:800px) {
+    .gallery {
+        top: 240vh
+    }
+}
+
+@media(orientation: portrait) and (min-height:1000px) {
+    .gallery {
+        top: 210vh
     }
 }
 
