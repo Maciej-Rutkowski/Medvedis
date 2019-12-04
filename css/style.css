@@ -559,7 +559,7 @@ header div h1 span {
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1100px) {
     .gallery {
         top: 240vh;
         height: 100vh;
@@ -584,9 +584,25 @@ header div h1 span {
     }
 }
 
-@media(max-width:800px) {
+@media(max-width:900px) {
     .gallery {
         top: 295vh;
+    }
+
+    .gallery button a {
+        font-size: 16px;
+    }
+}
+
+@media(orientation:portrait) and (min-width:700px) {
+    .gallery button a {
+        font-size: 22px;
+    }
+}
+
+@media(orientation:portrait) and (min-width:1000px) {
+    .gallery button a {
+        font-size: 30px;
     }
 }
 
@@ -724,21 +740,21 @@ header div h1 span {
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1100px) {
     .recruitment {
-        top: 320vh;
+        top: 340vh;
         margin: 0;
     }
 
     .recruitment img {
-        float: left;
+        float: none;
         width: 90%;
         max-height: 100vh;
         margin-bottom: 5vh;
     }
 
     .recruitment p {
-        float: left;
+        float: none;
         font-size: 16px;
         line-height: 22px;
         margin: 5vh 5vh 10vh;
@@ -749,27 +765,15 @@ header div h1 span {
     }
 }
 
-
-@media(max-width: 1000px) {
-
-    .about img {
-        max-height: 100vh;
-        width: 90%;
-        margin-bottom: 5vh;
+@media(max-width:900px) {
+    .recruitment {
+        top: 400vh
     }
+}
 
-    .about p {
-        font-size: 16px;
-        line-height: 22px;
-        margin: 5vh 5vh 10vh;
-    }
-
-    .about button {
-        bottom: 0
-    }
-
-    .about button a {
-        font-size: 18px;
+@media(max-width:600px) {
+    .recruitment {
+        top: 440vh
     }
 }
 
