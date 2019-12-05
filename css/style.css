@@ -416,8 +416,8 @@ header div h1 span {
 
     .about div img {
         max-height: 100vh;
-        width: 90%;
-        margin-bottom: 5vh;
+        min-width: 70%;
+        margin: 0 auto 5vh;
         float: none;
     }
 
@@ -670,7 +670,7 @@ header div h1 span {
     font-family: 'Metamorphous', cursive;
 }
 
-.recruitment img {
+.recruitment div img {
     display: block;
     max-height: 70vh;
     margin: 0 5%;
@@ -679,7 +679,7 @@ header div h1 span {
     border-radius: 8px;
 }
 
-.recruitment p {
+.recruitment div p {
     display: block;
     margin: 0 0 0 5%;
     padding: 15vh 0 0 0;
@@ -713,24 +713,40 @@ header div h1 span {
     color: #8C8074
 }
 
-@media (max-width: 1600px) {
+
+
+@media (max-width: 1700px) {
     .recruitment p {
         font-size: 16px;
         line-height: 26px;
     }
 
     .recruitment button {
-        left: 22%;
+        left: 20%;
     }
 }
 
-@media(max-width:1300px) {
-    .recruitment img {
-        max-height: 60vh;
-    }
+@media (max-width: 1500px) {
 
     .recruitment button {
+        left: 13%;
         bottom: 25vh;
+    }
+}
+
+@media(max-width: 1400px) {
+    .recruitment div img {
+        max-width: 60%;
+    }
+
+    .recruitment p {
+        font-size: 14px;
+    }
+}
+
+@media(max-width:1200px) {
+    .recruitment div img {
+        max-height: 50vh;
     }
 }
 
@@ -744,36 +760,116 @@ header div h1 span {
     .recruitment {
         top: 340vh;
         margin: 0;
+        height: 100vh;
     }
 
-    .recruitment img {
-        float: none;
+    .recruitment div img {
+        /* float: none; */
         width: 90%;
         max-height: 100vh;
-        margin-bottom: 5vh;
     }
 
-    .recruitment p {
-        float: none;
-        font-size: 16px;
-        line-height: 22px;
-        margin: 5vh 5vh 10vh;
+    .recruitment div p {
+        /* float: none; */
+        font-size: 18px;
+        line-height: 24px;
+        margin: 0 5vh;
+    }
+
+    .recruitment button {
+        bottom: 40vh;
     }
 
     .recruitment button a {
-        font-size: 12px;
+        font-size: 16px;
+    }
+}
+
+
+@media(max-width: 1000px) {
+    .recruitment {
+        height: 100vh;
+        margin: 0;
+    }
+
+    .recruitment div img {
+        max-height: 100vh;
+        min-width: 70%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .recruitment div p {
+        font-size: 20px;
+        line-height: 28px;
+        margin: 0 5vh;
+        float: none;
+        padding: 5vh 0 0 0;
+    }
+
+    .recruitment button {
+        bottom: 15vh;
+        left: 65%
+    }
+
+    .recruitment button a {
+        font-size: 18px;
     }
 }
 
 @media(max-width:900px) {
     .recruitment {
-        top: 400vh
+        top: 350vh
+    }
+}
+
+@media(max-width:900px) {
+    .recruitment {
+        top: 400vh;
+        height: 165vh;
+    }
+
+    .recruitment div p {
+        font-size: 14px;
+    }
+
+    .recruitment button a {
+        font-size: 14px;
     }
 }
 
 @media(max-width:600px) {
     .recruitment {
         top: 440vh
+    }
+}
+
+@media(orientation: portrait) and (max-width:450px) {
+    .recruitment {
+        height: 100vh;
+        top: 360vh
+    }
+
+    .recruitment div img {
+        max-height: 100vh;
+        max-width: 80%;
+        margin: 5vh auto;
+    }
+}
+
+@media(orientation: portrait) and (max-width:400px) {
+    .recruitment {
+        height: 100vh;
+    }
+
+    .recruitment button {
+        left: 50%
+    }
+}
+
+@media(orientation: portrait) and (max-width:350px) {
+    .recruitment {
+        height: 170vh;
     }
 }
 
@@ -849,6 +945,10 @@ header div h1 span {
 }
 
 @media(max-width: 1100px) {
+    .collaboration {
+        top: 440vh;
+    }
+
     .collaboration p {
         font-size: 16px;
         line-height: 24px;
@@ -857,7 +957,7 @@ header div h1 span {
 
 @media(max-width: 1000px) {
     .collaboration {
-        top: 450vh;
+        top: 440vh;
     }
 
     .collaboration button a {
@@ -871,6 +971,18 @@ header div h1 span {
 
     .collaboration button a:hover {
         padding: 10px 115px 10px 30px;
+    }
+}
+
+@media(max-width:900px) {
+    .collaboration {
+        top: 600vh
+    }
+}
+
+@media(orientation:portrait) and(max-width:450px) {
+    .collaboration {
+        top: 300vh;
     }
 }
 
@@ -995,6 +1107,12 @@ header div h1 span {
 
     .contact .e-mail p span {
         font-size: 12px;
+    }
+}
+
+@media(max-width:900px) {
+    .contact {
+        top: 600vh
     }
 }
 
