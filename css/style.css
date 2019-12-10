@@ -744,7 +744,7 @@ header div h1 span {
     }
 
     .recruitment button {
-        /* bottom: 35vh; */
+        bottom: 35vh;
     }
 }
 
@@ -979,7 +979,6 @@ header div h1 span {
     .recruitment button a {
         font-size: 26px;
     }
-}
 }
 
 /* Współpraca */
