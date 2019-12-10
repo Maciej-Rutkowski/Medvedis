@@ -742,6 +742,10 @@ header div h1 span {
     .recruitment p {
         font-size: 14px;
     }
+
+    .recruitment button {
+        /* bottom: 35vh; */
+    }
 }
 
 @media(max-width:1200px) {
@@ -819,12 +823,6 @@ header div h1 span {
 
 @media(max-width:900px) {
     .recruitment {
-        top: 350vh
-    }
-}
-
-@media(max-width:900px) {
-    .recruitment {
         top: 400vh;
         height: 165vh;
     }
@@ -833,8 +831,24 @@ header div h1 span {
         font-size: 14px;
     }
 
+    .recruitment button {
+        bottom: 20vh;
+    }
+
     .recruitment button a {
         font-size: 14px;
+    }
+}
+
+@media(max-width:800px) {
+    .recruitment button {
+        bottom: 30vh;
+    }
+}
+
+@media(max-width:700px) {
+    .recruitment button {
+        bottom: 25vh;
     }
 }
 
@@ -842,12 +856,20 @@ header div h1 span {
     .recruitment {
         top: 440vh
     }
+
+    .recruitment h1 {
+        margin-bottom: 5vh;
+    }
 }
 
-@media(orientation: portrait) and (max-width:450px) {
+@media(orientation: portrait) and (max-width:500px) {
     .recruitment {
         height: 100vh;
-        top: 360vh
+        top: 340vh
+    }
+
+    .recruitment div p {
+        font-size: 16px;
     }
 
     .recruitment div img {
@@ -855,22 +877,109 @@ header div h1 span {
         max-width: 80%;
         margin: 5vh auto;
     }
+
+    .recruitment button {
+        left: 47%;
+        bottom: 15vh;
+    }
 }
 
 @media(orientation: portrait) and (max-width:400px) {
     .recruitment {
         height: 100vh;
+        top: 360vh
     }
 
     .recruitment button {
-        left: 50%
+        left: 50%;
+        bottom: 10vh;
     }
 }
 
 @media(orientation: portrait) and (max-width:350px) {
     .recruitment {
-        height: 170vh;
+        top: 380vh;
     }
+
+    .recruitment div p {
+        font-size: 14px;
+    }
+
+    .recruitment button {
+        bottom: 5vh
+    }
+
+    .recruitment button a {
+        font-size: 12px;
+    }
+}
+
+@media(orientation: portrait) and (min-height:800px) {
+    .recruitment {
+        height: 100vh;
+        top: 340vh;
+    }
+
+    .recruitment button {
+        bottom: 20vh
+    }
+}
+
+@media(orientation: portrait) and (min-height:1000px) {
+    .recruitment {
+        top: 310vh;
+    }
+
+    .recruitment div img {
+        max-height: 100vh;
+        min-width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .recruitment div p {
+        font-size: 22px;
+    }
+
+    .recruitment button {
+        bottom: 15vh
+    }
+
+    .recruitment button a {
+        font-size: 20px;
+    }
+}
+
+@media(orientation: portrait) and (min-height:1300px) {
+    .recruitment {
+        height: 100vh;
+        margin: 0;
+    }
+
+    .recruitment div img {
+        max-height: 100vh;
+        min-width: 90%;
+        margin: 0 auto;
+        float: none;
+    }
+
+    .recruitment div p {
+        font-size: 30px;
+        line-height: 38px;
+        margin: 0 5vh;
+        float: none;
+        padding: 5vh 0 0 0;
+    }
+
+    .recruitment button {
+        bottom: 20vh;
+        left: 65%
+    }
+
+    .recruitment button a {
+        font-size: 26px;
+    }
+}
 }
 
 /* Współpraca */
