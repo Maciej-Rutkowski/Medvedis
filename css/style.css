@@ -1123,9 +1123,68 @@ header div h1 span {
     }
 }
 
-@media(orientation:portrait) and(max-width:450px) {
+@media(orientation:portrait) and (min-width: 700px) {
     .collaboration {
-        top: 300vh;
+        top: 410vh;
+        height: 100vh;
+    }
+
+    .collaboration p {
+        max-width: 60%;
+        font-size: 28px;
+        line-height: 42px;
+    }
+
+    .collaboration button a {
+        font-size: 32px;
+    }
+}
+
+@media(orientation:portrait) and (min-width: 1000px) {
+    .collaboration p {
+        max-width: 60%;
+        font-size: 32px;
+        line-height: 46px;
+    }
+}
+
+@media(orientation: portrait) and (max-width:500px) {
+    .collaboration {
+        top: 440vh;
+        height: 100vh;
+    }
+
+    .collaboration p {
+        max-width: 70%;
+        font-size: 20px;
+        line-height: 28px;
+    }
+}
+
+@media(orientation: portrait) and (max-width:400px) {
+    .collaboration {
+        top: 460vh;
+        height: 100vh;
+    }
+
+    .collaboration p {
+        max-width: 70%;
+        font-size: 18px;
+    }
+}
+
+@media(orientation:portrait) and (max-width:350px) {
+    .collaboration {
+        top: 480vh;
+    }
+
+    .collaboration p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .collaboration button a {
+        font-size: 18px;
     }
 }
 
