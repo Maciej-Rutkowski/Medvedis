@@ -1140,6 +1140,12 @@ header div h1 span {
     }
 }
 
+@media(orientation:portrait) and (min-width:800px) {
+    .collaboration {
+        top: 430vh
+    }
+}
+
 @media(orientation:portrait) and (min-width: 1000px) {
     .collaboration p {
         max-width: 60%;
@@ -1320,7 +1326,7 @@ header div h1 span {
 
 @media(max-width:900px) {
     .contact {
-        top: 600vh
+        top: 530vh
     }
 }
 
@@ -1328,11 +1334,148 @@ header div h1 span {
     .contact {
         top: 650vh;
     }
+
+    .contact .e-mail p {
+        font-size: 22px;
+    }
+
+    .contact .e-mail p span {
+        font-size: 14px;
+    }
+}
+
+@media(orientation:landscape) and (max-width:700px) {
+    .contact .e-mail {
+        margin-right: 7%;
+    }
 }
 
 @media(max-width:600px) and (orientation:landscape) {
     .contact {
         top: 690vh;
+        height: 70vh;
+    }
+
+    .contact h1 {
+        font-size: 32px;
+    }
+
+    .contact .e-mail {
+        margin-right: 7%;
+    }
+
+    .contact .e-mail p {
+        font-size: 18px;
+    }
+
+    .contact .e-mail p span {
+        font-size: 13px;
+    }
+}
+
+@media(orientation:landscape) and (max-width:1400px) {
+    .contact .media a {
+        font-size: 22px;
+        line-height: 32px;
+    }
+}
+
+@media(orientation:portrait) {
+    .contact {
+        top: 560vh;
+        height: 80vh
+    }
+
+    .contact .media {
+        float: none;
+        width: 100%;
+        text-align: center;
+    }
+
+    .contact .media a {
+        font-size: 20px;
+        margin-left: 10px;
+    }
+
+    .contact .bear img {
+        top: 50%;
+    }
+
+    .contact .e-mail {
+        width: 100%;
+        margin: 0;
+        text-align: center;
+        float: none;
+    }
+
+    .contact .e-mail p {
+        font-size: 24px;
+    }
+
+    .contact .e-mail p span {
+        font-size: 18px;
+    }
+}
+
+@media(orientation:portrait) and (min-width:700px) {
+    .contact {
+        top: 510vh
+    }
+
+    .contact h1 {
+        font-size: 46px;
+    }
+
+    .contact .media {
+        padding-right: 0;
+    }
+
+    .contact .media a {
+        font-size: 32px;
+        margin: 20px;
+    }
+
+    .contact .e-mail p {
+        font-size: 36px;
+        line-height: 42px;
+    }
+
+    .contact .e-mail p span {
+        font-size: 28px;
+    }
+}
+
+@media(orientation:portrait) and (max-width:500px) {
+    .contact {
+        top: 540vh;
+    }
+}
+
+@media(orientation:portrait) and (max-width:400px) {
+    .contact {
+        top: 560vh
+    }
+}
+
+@media(orientation:portrait) and (max-width:350px) {
+    .contact {
+        top: 560vh
+    }
+
+    .contact h1 {
+        font-size: 32px;
+    }
+
+    .contact .media a {
+        font-size: 16px;
+    }
+
+    .contact .e-mail p {
+        font-size: 22px;
+    }
+
+    .contact .e-mail p span {
+        font-size: 16px;
     }
 }
 
