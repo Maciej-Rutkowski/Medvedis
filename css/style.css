@@ -233,7 +233,7 @@ div.menu {
 /* Home */
 header {
     position: relative;
-    background-image: url("../images/main.jpg");
+    background-image: url("../Images/main.jpg");
     background-position: 0 -10vh;
     background-repeat: no-repeat;
     background-size: cover;
@@ -379,36 +379,37 @@ header div h1 span {
     color: #8C8074
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1650px) and (orientation:landscape) {
     .about p {
-        font-size: 16px;
+        font-size: 18px;
         line-height: 26px;
     }
 }
 
-@media(max-width: 1400px) {
+@media(max-width: 1600px)and (orientation:landscape) {
     .about div img {
         max-width: 60%;
     }
 
     .about p {
-        font-size: 14px;
+        font-size: 17px;
+        line-height: 22px;
     }
 }
 
-@media(max-width:1350px) {
+@media(max-width:1350px) and (orientation:landscape) {
     .about div img {
         max-height: 60vh;
     }
 }
 
-@media(max-width:1200px) {
+@media(max-width:1200px) and (orientation:landscape) {
     .about div img {
         max-height: 50vh;
     }
 }
 
-@media(max-width: 1000px) {
+@media(max-width: 1050px) {
     .about {
         height: auto;
         margin: 0;
@@ -437,6 +438,13 @@ header div h1 span {
     }
 }
 
+@media(max-width:900px) {
+
+    .about div img {
+        width: 80%;
+    }
+}
+
 @media(orientation: landscape) and (max-width:850px) {
     .about {
         top: 105vh;
@@ -461,6 +469,13 @@ header div h1 span {
         height: 210vh;
     }
 }
+
+/* @media (orientation:portrait) and (max-width:1050px) {
+    .about div p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+} */
 
 @media(orientation: portrait) and (max-width:450px) {
     .about {
@@ -511,9 +526,21 @@ header div h1 span {
 }
 
 @media(orientation: portrait) and (min-height:1300px) {
+    .about {
+        height: 100vh;
+    }
+
+    .about div img {
+        width: 80%;
+    }
+
     .about div p {
         font-size: 26px;
         line-height: 36px;
+    }
+
+    .about button {
+        bottom: 0;
     }
 }
 
@@ -1287,6 +1314,8 @@ header div h1 span {
     text-decoration: none;
 }
 
+
+
 @media(max-width: 1400px) {
     .contact .media a {
         font-size: 18px;
@@ -1299,6 +1328,13 @@ header div h1 span {
 
     .contact .e-mail p span {
         font-size: 20px;
+    }
+}
+
+@media(orientation:landscape) and (max-width:1400px) {
+    .contact .media a {
+        font-size: 22px;
+        line-height: 32px;
     }
 }
 
@@ -1345,6 +1381,11 @@ header div h1 span {
 }
 
 @media(orientation:landscape) and (max-width:700px) {
+    .contact .media a {
+        font-size: 14px;
+        line-height: 20px;
+    }
+
     .contact .e-mail {
         margin-right: 7%;
     }
@@ -1373,12 +1414,7 @@ header div h1 span {
     }
 }
 
-@media(orientation:landscape) and (max-width:1400px) {
-    .contact .media a {
-        font-size: 22px;
-        line-height: 32px;
-    }
-}
+
 
 @media(orientation:portrait) {
     .contact {
@@ -1449,6 +1485,10 @@ header div h1 span {
     .contact {
         top: 540vh;
     }
+
+    .contact .media a {
+        line-height: 28px;
+    }
 }
 
 @media(orientation:portrait) and (max-width:400px) {
@@ -1459,7 +1499,8 @@ header div h1 span {
 
 @media(orientation:portrait) and (max-width:350px) {
     .contact {
-        top: 560vh
+        top: 560vh;
+        height: 90vh
     }
 
     .contact h1 {
@@ -1468,6 +1509,10 @@ header div h1 span {
 
     .contact .media a {
         font-size: 16px;
+    }
+
+    .contact .e-mail {
+        margin-top: 5vh;
     }
 
     .contact .e-mail p {
