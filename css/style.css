@@ -460,7 +460,13 @@ header div h1 span {
 
 @media(max-width: 700px) {
     .about {
-        height: 185vh;
+        min-height: 200vh;
+    }
+
+    .about div p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 5vh 5vh 10vh;
     }
 }
 
@@ -526,6 +532,12 @@ header div h1 span {
         max-height: 100vh;
         max-width: 80%;
         margin: 5vh auto;
+    }
+}
+
+@media(orientation: portrait) and (max-width:420px) {
+    .about {
+        min-height: 130vh;
     }
 }
 
@@ -929,6 +941,12 @@ header div h1 span {
     .recruitment button {
         left: 47%;
         bottom: 15vh;
+    }
+}
+
+@media(orientation: portrait) and (max-width:420px) {
+    .recruitment {
+        min-height: 105vh;
     }
 }
 
@@ -1568,6 +1586,13 @@ header div h1 span {
 
     .contact .media a {
         line-height: 28px;
+    }
+}
+
+@media(orientation: portrait) and (max-width:420px) {
+    .contact .media a {
+        font-size: 22px;
+        line-height: 26px;
     }
 }
 
