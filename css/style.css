@@ -460,7 +460,7 @@ header div h1 span {
 
 @media(max-width: 700px) {
     .about {
-        min-height: 200vh;
+        min-height: 185vh;
     }
 
     .about div p {
@@ -472,19 +472,19 @@ header div h1 span {
 
 @media(max-width:600px) and (orientation:landscape) {
     .about {
-        height: 210vh;
+        min-height: 195vh;
     }
 }
 
 @media(orientation: portrait) and (min-height:800px) {
     .about {
-        height: 130vh;
+        min-height: 130vh;
     }
 }
 
 @media(orientation: portrait) and (min-height:1000px) {
     .about {
-        height: 95vh;
+        min-height: 95vh;
     }
 
     .about div img {
@@ -500,7 +500,7 @@ header div h1 span {
 
 @media(orientation: portrait) and (min-height:1300px) {
     .about {
-        height: 100vh;
+        min-height: 100vh;
     }
 
     .about div img {
@@ -520,6 +520,12 @@ header div h1 span {
 @media(max-width:600px) {
     .about {
         height: 100vh;
+    }
+}
+
+@media(orientation: portrait) and (max-width:800px) {
+    .about {
+        min-height: 100vh;
     }
 }
 
@@ -543,11 +549,27 @@ header div h1 span {
 
 @media(orientation: portrait) and (max-width:400px) {
     .about {
-        height: 150vh;
+        min-height: 120vh;
+    }
+}
+
+@media(orientation: portrait) and (max-width:390px) {
+    .about {
+        min-height: 150vh;
+    }
+}
+
+@media(orientation: portrait) and (max-width:380px) {
+    .about {
+        min-height: 130vh;
     }
 }
 
 @media(orientation: portrait) and (max-width:370px) {
+    .about {
+        min-height: 150vh;
+    }
+
     .about div p {
         font-size: 14px;
     }
@@ -556,6 +578,12 @@ header div h1 span {
 @media(orientation: portrait) and (max-width:350px) {
     .about {
         height: 170vh;
+    }
+}
+
+@media(orientation: landscape) and (max-width:570px) {
+    .about {
+        min-height: 210vh;
     }
 }
 
@@ -648,11 +676,31 @@ header div h1 span {
     }
 }
 
-@media(max-width:600px) {
+@media(max-width:600px) and (orientation:landscape) {
     .gallery {
-        top: 330vh;
+        top: 305vh;
     }
 }
+
+@media(max-width:570px) and (orientation:landscape) {
+    .gallery {
+        top: 325vh;
+    }
+}
+
+
+
+/* @media(orientation: portrait) and (max-width:600px) {
+    .gallery {
+        top: 235vh
+    }
+} */
+
+/* @media(orientation: portrait) and (max-width:600px) {
+    .gallery {
+        top: 205vh
+    }
+} */
 
 @media(orientation: portrait) and (max-width:450px) {
     .gallery {
@@ -684,11 +732,19 @@ header div h1 span {
     }
 }
 
-@media(orientation: portrait) and (min-height:1000px) {
+@media(orientation: portrait) and (min-height:900px) {
     .gallery {
         top: 210vh
     }
 }
+
+/* @media(orientation: portrait) and (min-height:1000px) {
+    .gallery {
+        top: 210vh
+    }
+} */
+
+
 
 /* Rekrutacja */
 .recruitment {
@@ -922,6 +978,12 @@ header div h1 span {
     }
 }
 
+@media(orientation: portrait) and (max-width:600px) {
+    .recruitment {
+        top: 305vh
+    }
+}
+
 @media(orientation: portrait) and (max-width:500px) {
     .recruitment {
         height: 100vh;
@@ -998,7 +1060,7 @@ header div h1 span {
     }
 }
 
-@media(orientation: portrait) and (min-height:1000px) {
+@media(orientation: portrait) and (min-height:900px) {
     .recruitment {
         top: 310vh;
     }
@@ -1055,6 +1117,8 @@ header div h1 span {
         font-size: 26px;
     }
 }
+
+
 
 /* Współpraca */
 
@@ -1167,6 +1231,13 @@ header div h1 span {
 @media(max-width:900px) {
     .collaboration {
         top: 430vh
+    }
+}
+
+@media(max-width:960px) and (orientation:landscape) {
+    .collaboration {
+        top:
+            470vh
     }
 }
 
@@ -1287,6 +1358,18 @@ header div h1 span {
     .collaboration button a {
         font-size: 18px;
     }
+}
+
+@media(orientation:portrait) and (max-width:330px) {
+    .collaboration {
+        top: 485vh;
+    }
+
+    .collaboration p {
+        font-size: 15px;
+        line-height: 22px;
+    }
+
 }
 
 /* Kontakt */
@@ -1465,7 +1548,7 @@ header div h1 span {
     }
 }
 
-@media(max-width:600px) and (orientation:landscape) {
+@media(max-width:500px) and (orientation:landscape) {
     .contact {
         top: 690vh;
         height: 70vh;
@@ -1473,6 +1556,12 @@ header div h1 span {
 
     .contact h1 {
         font-size: 32px;
+    }
+
+    .contact .media a {
+        font-size: 14px;
+        line-height: 20px;
+        width: 100%;
     }
 
     .contact .e-mail {
@@ -1488,6 +1577,28 @@ header div h1 span {
     }
 }
 
+@media(max-width:600px) and (orientation:landscape) {
+    .contact {
+        top: 690vh;
+        height: 70vh;
+    }
+
+    .contact h1 {
+        font-size: 32px;
+    }
+
+    .contact .e-mail {
+        margin-right: 5%;
+    }
+
+    .contact .e-mail p {
+        font-size: 18px;
+    }
+
+    .contact .e-mail p span {
+        font-size: 13px;
+    }
+}
 
 
 @media(orientation:portrait) {
@@ -1646,6 +1757,28 @@ header div h1 span {
 
     .contact .e-mail p span {
         font-size: 16px;
+    }
+}
+
+@media(orientation:portrait) and (max-width:350px) {
+    .contact {
+        top: 585vh;
+    }
+
+    .contact p {
+        font-size: 16px;
+        line-height: 22px;
+    }
+
+    .contact button a {
+        font-size: 18px;
+    }
+}
+
+@media(orientation:landscape) and (max-width:540px) {
+    .contact .media a {
+        margin-left: 10%;
+        width: 100%;
     }
 }
 
