@@ -1146,7 +1146,7 @@ header div h1 span {
     position: absolute;
     color: white;
     top: 10vh;
-    left: 5%;
+    right: 5%;
     max-width: 27%;
     font-size: 22px;
     line-height: 32px;
