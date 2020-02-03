@@ -15,6 +15,7 @@ html {
 }
 
 /* Nawigacja */
+
 div.menu {
     background-color: #fff;
     height: 10vh;
@@ -230,6 +231,7 @@ div.menu {
 
 }
 
+
 /* Home */
 header {
     position: relative;
@@ -238,11 +240,10 @@ header {
     background-repeat: no-repeat;
     background-size: cover;
     top: 10vh;
-    min-height: 90vh;
     height: 90vh;
+    min-height: 90vh;
     width: 100%;
     overflow: hidden;
-    z-index: -1;
 }
 
 header div {
@@ -317,12 +318,12 @@ header div h1 span {
 /* About */
 
 .about {
-    position: absolute;
-    top: 100vh;
+    position: relative;
+    /* top: 100vh; */
     width: 100%;
-    height: 90vh;
+    /* height: 90vh; */
     overflow: hidden;
-    margin: 5vh 0;
+    margin: 10vh 0;
 }
 
 .about h1 {
@@ -346,19 +347,19 @@ header div h1 span {
     border-radius: 8px;
 }
 
-.about p {
+.about div p {
     display: block;
     margin: 0 5%;
     text-align: justify;
+    hyphens: auto;
     color: #fff;
     font-size: 18px;
     line-height: 30px;
-    font-family: roboto;
 }
 
 .about button {
     position: absolute;
-    bottom: 6vh;
+    /* bottom: 8vh; */
     right: 6%;
     border: none;
 }
@@ -379,45 +380,40 @@ header div h1 span {
     color: #8C8074
 }
 
-@media (max-width: 1650px) and (orientation:landscape) {
-    .about p {
+@media(max-width: 1530px) and (orientation:landscape) {
+    .about div p {
         font-size: 18px;
         line-height: 26px;
     }
 }
 
-@media(max-width: 1600px)and (orientation:landscape) {
-    .about div img {
-        max-width: 60%;
-    }
-
-    .about p {
+@media(max-width: 1450px) and (orientation:landscape) {
+    .about div p {
         font-size: 17px;
         line-height: 22px;
     }
 }
 
-@media(max-width:1350px) and (orientation:landscape) {
+
+@media(max-width:1400px) and (orientation:landscape) {
     .about div img {
-        max-height: 60vh;
+        width: 50%;
     }
 }
 
-@media(max-width:1200px) and (orientation:landscape) {
-    .about div img {
-        max-height: 50vh;
-    }
-}
-
-@media(max-width: 1050px) {
+@media(max-width: 1350px) {
     .about {
-        height: auto;
-        margin: 0;
+        padding-top: 10vh;
+        margin: 0 0 10vh;
+    }
+
+    .about h1 {
+        margin: 5vh 0;
     }
 
     .about div img {
         max-height: 100vh;
-        min-width: 70%;
+        width: 80%;
         margin: 0 auto 5vh;
         float: none;
     }
@@ -425,7 +421,7 @@ header div h1 span {
     .about div p {
         font-size: 16px;
         line-height: 22px;
-        margin: 5vh 5vh 10vh;
+        margin: 5vh 5vh 15vh;
     }
 
     .about button {
@@ -438,60 +434,21 @@ header div h1 span {
     }
 }
 
-@media(max-width:900px) {
-
-    .about div img {
-        width: 80%;
-    }
-}
-
-@media(orientation: landscape) and (max-width:850px) {
+@media(max-width: 1100px) {
     .about {
-        top: 105vh;
-        height: 165vh;
-    }
-
-    .about div img {
-        margin: 5vh 15%;
-        width: 70%;
-        max-height: 80vh;
+        padding-top: 0;
+        ;
     }
 }
 
 @media(max-width: 700px) {
-    .about {
-        min-height: 185vh;
-    }
-
     .about div p {
         font-size: 16px;
         line-height: 20px;
-        margin: 5vh 5vh 10vh;
-    }
-}
-
-@media(max-width:600px) and (orientation:landscape) {
-    .about {
-        min-height: 195vh;
-    }
-}
-
-@media(orientation: portrait) and (min-height:800px) {
-    .about {
-        min-height: 130vh;
     }
 }
 
 @media(orientation: portrait) and (min-height:1000px) {
-    .about {
-        min-height: 95vh;
-    }
-
-    .about div img {
-        float: none;
-        margin: 5vh auto;
-    }
-
     .about div p {
         line-height: 26px;
         font-size: 18px;
@@ -499,91 +456,15 @@ header div h1 span {
 }
 
 @media(orientation: portrait) and (min-height:1300px) {
-    .about {
-        min-height: 100vh;
-    }
-
-    .about div img {
-        width: 80%;
-    }
-
     .about div p {
         font-size: 26px;
         line-height: 36px;
     }
-
-    .about button {
-        bottom: 0;
-    }
-}
-
-@media(max-width:600px) {
-    .about {
-        height: 100vh;
-    }
-}
-
-@media(orientation: portrait) and (max-width:800px) {
-    .about {
-        min-height: 100vh;
-    }
-}
-
-@media(orientation: portrait) and (max-width:450px) {
-    .about {
-        height: 125vh;
-    }
-
-    .about div img {
-        max-height: 100vh;
-        max-width: 80%;
-        margin: 5vh auto;
-    }
-}
-
-@media(orientation: portrait) and (max-width:420px) {
-    .about {
-        min-height: 130vh;
-    }
-}
-
-@media(orientation: portrait) and (max-width:400px) {
-    .about {
-        min-height: 120vh;
-    }
-}
-
-@media(orientation: portrait) and (max-width:390px) {
-    .about {
-        min-height: 150vh;
-    }
-}
-
-@media(orientation: portrait) and (max-width:380px) {
-    .about {
-        min-height: 130vh;
-    }
 }
 
 @media(orientation: portrait) and (max-width:370px) {
-    .about {
-        min-height: 150vh;
-    }
-
     .about div p {
         font-size: 14px;
-    }
-}
-
-@media(orientation: portrait) and (max-width:350px) {
-    .about {
-        height: 170vh;
-    }
-}
-
-@media(orientation: landscape) and (max-width:570px) {
-    .about {
-        min-height: 210vh;
     }
 }
 
@@ -596,8 +477,7 @@ header div h1 span {
     overflow: hidden;
     height: 90vh;
     width: 100%;
-    position: absolute;
-    top: 200vh;
+    position: relative;
 }
 
 .gallery button {
@@ -631,7 +511,6 @@ header div h1 span {
 
 @media(max-width: 1100px) {
     .gallery {
-        top: 240vh;
         height: 100vh;
     }
 
@@ -648,17 +527,7 @@ header div h1 span {
     }
 }
 
-@media(max-width:850px) {
-    .gallery {
-        top: 280vh;
-    }
-}
-
 @media(max-width:900px) {
-    .gallery {
-        top: 295vh;
-    }
-
     .gallery button a {
         font-size: 16px;
     }
@@ -676,84 +545,13 @@ header div h1 span {
     }
 }
 
-@media(max-width:600px) and (orientation:landscape) {
-    .gallery {
-        top: 305vh;
-    }
-}
-
-@media(max-width:570px) and (orientation:landscape) {
-    .gallery {
-        top: 325vh;
-    }
-}
-
-
-
-/* @media(orientation: portrait) and (max-width:600px) {
-    .gallery {
-        top: 235vh
-    }
-} */
-
-/* @media(orientation: portrait) and (max-width:600px) {
-    .gallery {
-        top: 205vh
-    }
-} */
-
-@media(orientation: portrait) and (max-width:450px) {
-    .gallery {
-        top: 235vh
-    }
-}
-
-@media(orientation: portrait) and (max-width:400px) {
-    .gallery {
-        top: 260vh
-    }
-}
-
-@media(orientation: portrait) and (max-width:350px) {
-    .gallery {
-        top: 280vh
-    }
-}
-
-@media(orientation: portrait) and (min-height:1000px) {
-    .gallery {
-        top: 240vh
-    }
-}
-
-@media(orientation: portrait) and (min-height:800px) {
-    .gallery {
-        top: 240vh
-    }
-}
-
-@media(orientation: portrait) and (min-height:900px) {
-    .gallery {
-        top: 210vh
-    }
-}
-
-/* @media(orientation: portrait) and (min-height:1000px) {
-    .gallery {
-        top: 210vh
-    }
-} */
-
-
-
 /* Rekrutacja */
 .recruitment {
-    position: absolute;
-    top: 290vh;
+    position: relative;
     width: 100%;
-    height: 90vh;
     overflow: hidden;
-    margin: 5vh 0;
+    /* margin: 10vh 0; */
+    margin-bottom: 10vh;
 }
 
 .recruitment h1 {
@@ -777,6 +575,8 @@ header div h1 span {
     border-radius: 8px;
 }
 
+
+
 .recruitment div p {
     display: block;
     margin: 0 0 0 5%;
@@ -785,12 +585,11 @@ header div h1 span {
     color: #fff;
     font-size: 18px;
     line-height: 30px;
-    font-family: roboto;
 }
 
 .recruitment button {
     position: absolute;
-    bottom: 32vh;
+    bottom: 25vh;
     left: 26%;
     border: none;
 }
@@ -811,138 +610,76 @@ header div h1 span {
     color: #8C8074
 }
 
+/* @media(max-width: 1450px) and (orientation:landscape) {
+    .recruitment div p {
+        font-size: 17px;
+        line-height: 22px;
+    }
+} */
 
+@media(max-width: 1400px) {
 
-@media (max-width: 1700px) {
-    .recruitment p {
-        font-size: 16px;
-        line-height: 26px;
+    .recruitment div img {
+        max-height: 100vh;
+        width: 50%;
+        /* margin: 0 auto 5vh; */
+        /* float: none; */
+    }
+
+    .recruitment div p {
+        /* font-size: 16px; */
+        /* line-height: 22px; */
+        margin: 5vh 5vh 10vh;
     }
 
     .recruitment button {
         left: 20%;
-    }
-}
-
-@media (max-width: 1500px) {
-
-    .recruitment button {
-        left: 13%;
-        bottom: 25vh;
-    }
-}
-
-@media(max-width: 1400px) {
-    .recruitment div img {
-        max-width: 60%;
-    }
-
-    .recruitment p {
-        font-size: 14px;
-    }
-
-    .recruitment button {
-        bottom: 30vh;
-    }
-}
-
-@media(max-width:1200px) {
-    .recruitment div img {
-        max-height: 50vh;
-    }
-}
-
-@media(max-width:1150px) {
-    .recruitment button {
-        left: 15%;
-    }
-}
-
-@media(max-width: 1100px) {
-    .recruitment {
-        top: 340vh;
-        margin: 0;
-        height: 100vh;
-    }
-
-    .recruitment div img {
-        /* float: none; */
-        width: 90%;
-        max-height: 100vh;
-    }
-
-    .recruitment div p {
-        /* float: none; */
-        font-size: 18px;
-        line-height: 24px;
-        margin: 0 5vh;
-    }
-
-    .recruitment button {
-        bottom: 40vh;
+        bottom: 5vw;
     }
 
     .recruitment button a {
-        font-size: 16px;
+        font-size: 18px;
     }
 }
 
-
 @media(max-width: 1100px) {
     .recruitment {
-        height: 100vh;
-        margin: 0;
+        padding-top: 0;
+        margin: 0 0 10vh;
+    }
+
+    .recruitment h1 {
+        margin: 5vh 0;
     }
 
     .recruitment div img {
         max-height: 100vh;
-        min-width: 70%;
-        margin: 0 auto;
+        width: 80%;
+        margin: 0 auto 5vh;
         float: none;
     }
 
     .recruitment div p {
+        padding: 0;
         font-size: 20px;
         line-height: 28px;
-        margin: 0 5vh;
-        float: none;
-        padding: 5vh 0 0 0;
+        margin: 5vh 5vh 15vh;
     }
 
     .recruitment button {
-        bottom: 14vh;
-        left: 65%
+        left: 65%;
+        bottom: 0;
+        margin-top: 10vh;
     }
 
     .recruitment button a {
         font-size: 18px;
-    }
-}
-
-@media(max-width: 1100px) and (orientation:landscape) {
-    .recruitment button {
-        bottom: 5vh;
-    }
-}
-
-@media(max-width: 1050px) {
-    .recruitment {
-        height: 125vh;
     }
 }
 
 @media(max-width:900px) {
-    .recruitment {
-        top: 400vh;
-        height: 165vh;
-    }
-
     .recruitment div p {
         font-size: 14px;
-    }
-
-    .recruitment button {
-        bottom: 20vh;
     }
 
     .recruitment button a {
@@ -950,77 +687,15 @@ header div h1 span {
     }
 }
 
-@media(max-width:900px)and(orientation:portrait) {
-    .recruitment {
-        height: 100vh;
-    }
-}
-
-@media(max-width:800px) {
+@media(max-width: 450px) {
     .recruitment button {
-        bottom: 30vh;
-    }
-}
-
-@media(max-width:700px) {
-    .recruitment button {
-        bottom: 25vh;
-    }
-}
-
-@media(max-width:600px) {
-    .recruitment {
-        top: 440vh
-    }
-
-    .recruitment h1 {
-        margin-bottom: 5vh;
-    }
-}
-
-@media(orientation: portrait) and (max-width:600px) {
-    .recruitment {
-        top: 305vh
+        left: 46%;
     }
 }
 
 @media(orientation: portrait) and (max-width:500px) {
-    .recruitment {
-        height: 100vh;
-        top: 340vh
-    }
-
     .recruitment div p {
         font-size: 16px;
-    }
-
-    .recruitment div img {
-        max-height: 100vh;
-        max-width: 80%;
-        margin: 5vh auto;
-    }
-
-    .recruitment button {
-        left: 47%;
-        bottom: 15vh;
-    }
-}
-
-@media(orientation: portrait) and (max-width:420px) {
-    .recruitment {
-        min-height: 105vh;
-    }
-}
-
-@media(orientation: portrait) and (max-width:400px) {
-    .recruitment {
-        height: 100vh;
-        top: 360vh
-    }
-
-    .recruitment button {
-        left: 50%;
-        bottom: 10vh;
     }
 }
 
@@ -1032,16 +707,8 @@ header div h1 span {
 }
 
 @media(orientation: portrait) and (max-width:350px) {
-    .recruitment {
-        top: 380vh;
-    }
-
     .recruitment div p {
         font-size: 14px;
-    }
-
-    .recruitment button {
-        bottom: 5vh
     }
 
     .recruitment button a {
@@ -1049,35 +716,9 @@ header div h1 span {
     }
 }
 
-@media(orientation: portrait) and (min-height:800px) {
-    .recruitment {
-        height: 100vh;
-        top: 340vh;
-    }
-
-    .recruitment button {
-        bottom: 20vh
-    }
-}
-
 @media(orientation: portrait) and (min-height:900px) {
-    .recruitment {
-        top: 310vh;
-    }
-
-    .recruitment div img {
-        max-height: 100vh;
-        min-width: 90%;
-        margin: 0 auto;
-        float: none;
-    }
-
     .recruitment div p {
         font-size: 22px;
-    }
-
-    .recruitment button {
-        bottom: 15vh
     }
 
     .recruitment button a {
@@ -1085,40 +726,16 @@ header div h1 span {
     }
 }
 
-
-
 @media(orientation: portrait) and (min-height:1300px) {
-    .recruitment {
-        height: 100vh;
-        margin: 0;
-    }
-
-    .recruitment div img {
-        max-height: 100vh;
-        min-width: 90%;
-        margin: 0 auto;
-        float: none;
-    }
-
     .recruitment div p {
         font-size: 30px;
         line-height: 38px;
-        margin: 0 5vh;
-        float: none;
-        padding: 5vh 0 0 0;
-    }
-
-    .recruitment button {
-        bottom: 20vh;
-        left: 65%
     }
 
     .recruitment button a {
         font-size: 26px;
     }
 }
-
-
 
 /* Współpraca */
 
@@ -1130,16 +747,9 @@ header div h1 span {
     overflow: hidden;
     height: 90vh;
     width: 100%;
-    position: absolute;
-    top: 390vh;
+    position: relative;
 }
 
-.collaboration img {
-    display: block;
-    position: absolute;
-    max-width: 100%;
-    transform: rotateY(180deg);
-}
 
 .collaboration p {
     display: block;
@@ -1148,13 +758,14 @@ header div h1 span {
     top: 10vh;
     right: 5%;
     max-width: 27%;
+    /* height: 80%; */
     font-size: 22px;
     line-height: 32px;
     text-align: justify;
     background-color: rgba(0, 0, 0, 0.6);
-    font-family: roboto;
     padding: 15px 20px;
 }
+
 
 .collaboration button {
     position: absolute;
@@ -1193,34 +804,20 @@ header div h1 span {
 
 @media(max-width: 1100px) {
     .collaboration {
-        top: 440vh;
+        height: 100vh;
     }
 
     .collaboration p {
         font-size: 20px;
         line-height: 24px;
     }
-}
 
-@media(max-width:1050px) {
-    .collaboration {
-        top: 470vh;
-        height: 100vh
-    }
-}
-
-@media(max-width: 1000px) {
-    .collaboration {
-        top: 440vh;
+    .collaboration button {
+        bottom: 15vh;
     }
 
     .collaboration button a {
         font-size: 22px;
-    }
-
-    .collaboration p {
-        font-size: 16px;
-        line-height: 24px;
     }
 
     .collaboration button a:hover {
@@ -1228,128 +825,86 @@ header div h1 span {
     }
 }
 
-@media(max-width:900px) {
-    .collaboration {
-        top: 430vh
-    }
-}
-
-@media(max-width:960px) and (orientation:landscape) {
-    .collaboration {
-        top:
-            470vh
-    }
-}
-
-@media(max-width:900px) and (orientation:landscape) {
-    .collaboration {
-        top: 550vh;
-        height: 100vh;
-    }
-
-    .collaboration p {
-        max-width: 80%;
-    }
-}
-
-@media(max-width:600px) and (orientation:landscape) {
-    .collaboration {
-        top: 590vh;
-        height: 100vh;
-    }
-
-    .collaboration p {
-        max-width: 80%;
-    }
-}
-
-@media(orientation:portrait) and (min-width: 700px) {
-    .collaboration {
-        top: 410vh;
-        height: 100vh;
-    }
-
+@media(max-width:1050px) {
     .collaboration p {
         max-width: 60%;
-        font-size: 28px;
-        line-height: 42px;
+    }
+}
+
+@media(max-width:1050px) and (orientation:portrait) {
+    .collaboration p {
+        font-size: 30px;
+        line-height: 40px;
+        max-width: 60%;
+        top: 30vh;
+    }
+}
+
+@media(max-width: 1000px) {
+    .collaboration p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+}
+
+@media(max-width:900px) {
+    .collaboration p {
+        max-width: 80%;
     }
 
     .collaboration button a {
-        font-size: 32px;
+        font-size: 16px;
     }
 }
 
-@media(orientation:portrait) and (min-width:800px) {
-    .collaboration {
-        top: 430vh
-    }
-}
-
-@media(orientation:portrait) and (min-width: 1000px) {
+@media(max-width: 600px) {
     .collaboration p {
-        max-width: 60%;
-        font-size: 32px;
-        line-height: 46px;
+        font-size: 14px;
+        line-height: 20px;
     }
 }
 
-@media(orientation: portrait) and (min-height:1200px) {
-    .collaboration {
-        top: 410vh;
+@media(orientation:portrait) and (min-width:700px) {
+    .collaboration button a {
+        font-size: 22px;
     }
 }
 
-@media(orientation: portrait) and (max-width:600px) {
-    .collaboration {
-        top: 410vh;
-        height: 100vh
+@media(orientation:portrait) and (min-width:1000px) {
+    .collaboration button a {
+        font-size: 30px;
     }
+}
 
+@media(orientation: portrait) and (max-width:800px) {
     .collaboration p {
-        max-width: 70%;
         font-size: 22px;
         line-height: 32px;
     }
 }
 
 @media(orientation: portrait) and (max-width:500px) {
-    .collaboration {
-        top: 440vh;
-        height: 100vh;
-    }
-
     .collaboration p {
-        max-width: 70%;
         font-size: 20px;
         line-height: 28px;
     }
 }
 
-@media(orientation: portrait) and (max-width:400px) {
-    .collaboration {
-        top: 460vh;
-        height: 100vh;
-    }
-
+@media(orientation: portrait) and (max-width:450px) {
     .collaboration p {
-        max-width: 70%;
         font-size: 18px;
+        top: 20vh;
     }
 }
 
 @media(orientation: portrait) and (max-width:370px) {
     .collaboration p {
-        font-size: 18px;
-        line-height: 24px;
+        font-size: 17px;
+        line-height: 22px;
     }
 }
 
 @media(orientation:portrait) and (max-width:350px) {
-    .collaboration {
-        top: 480vh;
-    }
-
     .collaboration p {
         font-size: 16px;
         line-height: 22px;
@@ -1361,13 +916,11 @@ header div h1 span {
 }
 
 @media(orientation:portrait) and (max-width:330px) {
-    .collaboration {
-        top: 485vh;
-    }
-
     .collaboration p {
-        font-size: 15px;
-        line-height: 22px;
+        top: 10vh;
+        /* text-align: left; */
+        font-size: 14px;
+        line-height: 20px;
     }
 
 }
@@ -1375,9 +928,8 @@ header div h1 span {
 /* Kontakt */
 .contact {
     display: block;
-    position: absolute;
+    position: relative;
     overflow: hidden;
-    top: 480vh;
     background-color: #262626;
     width: 100%;
     height: 55vh;
@@ -1465,8 +1017,6 @@ header div h1 span {
     text-decoration: none;
 }
 
-
-
 @media(max-width: 1400px) {
     .contact .media a {
         font-size: 18px;
@@ -1489,18 +1039,6 @@ header div h1 span {
     }
 }
 
-@media(max-width:1100px) {
-    .contact {
-        top: 530vh
-    }
-}
-
-@media(max-width: 1050px) {
-    .contact {
-        top: 570vh;
-    }
-}
-
 @media(max-width: 1000px) {
     .contact .media a {
         font-size: 14px;
@@ -1517,16 +1055,7 @@ header div h1 span {
     }
 }
 
-@media(max-width:900px) {
-    .contact {
-        top: 530vh
-    }
-}
-
 @media(max-width:900px) and (orientation:landscape) {
-    .contact {
-        top: 650vh;
-    }
 
     .contact .e-mail p {
         font-size: 22px;
@@ -1550,7 +1079,6 @@ header div h1 span {
 
 @media(max-width:500px) and (orientation:landscape) {
     .contact {
-        top: 690vh;
         height: 70vh;
     }
 
@@ -1579,7 +1107,6 @@ header div h1 span {
 
 @media(max-width:600px) and (orientation:landscape) {
     .contact {
-        top: 690vh;
         height: 70vh;
     }
 
@@ -1603,7 +1130,6 @@ header div h1 span {
 
 @media(orientation:portrait) {
     .contact {
-        top: 560vh;
         height: 80vh
     }
 
@@ -1611,6 +1137,7 @@ header div h1 span {
         float: none;
         width: 100%;
         text-align: center;
+        padding-right: 0;
     }
 
     .contact .media a {
@@ -1639,9 +1166,6 @@ header div h1 span {
 }
 
 @media(orientation:portrait) and (min-width:700px) {
-    .contact {
-        top: 510vh
-    }
 
     .contact h1 {
         font-size: 46px;
@@ -1653,7 +1177,7 @@ header div h1 span {
 
     .contact .media a {
         font-size: 32px;
-        margin: 20px;
+        /* margin: 20px; */
     }
 
     .contact .e-mail p {
@@ -1667,9 +1191,6 @@ header div h1 span {
 }
 
 @media(orientation:portrait) and (max-width:600px) {
-    .contact {
-        top: 510vh
-    }
 
     .contact .media {
         padding-right: 0;
@@ -1691,9 +1212,6 @@ header div h1 span {
 }
 
 @media(orientation:portrait) and (max-width:500px) {
-    .contact {
-        top: 540vh;
-    }
 
     .contact .media a {
         line-height: 28px;
@@ -1704,12 +1222,6 @@ header div h1 span {
     .contact .media a {
         font-size: 22px;
         line-height: 26px;
-    }
-}
-
-@media(orientation:portrait) and (max-width:400px) {
-    .contact {
-        top: 560vh
     }
 }
 
@@ -1735,7 +1247,6 @@ header div h1 span {
 
 @media(orientation:portrait) and (max-width:350px) {
     .contact {
-        top: 560vh;
         height: 90vh
     }
 
@@ -1761,9 +1272,6 @@ header div h1 span {
 }
 
 @media(orientation:portrait) and (max-width:350px) {
-    .contact {
-        top: 585vh;
-    }
 
     .contact p {
         font-size: 16px;
@@ -1784,5 +1292,7 @@ header div h1 span {
 
 body {
     background-color: #8C8074;
-    /* background-color: #999; */
 }
+
+
+/* Wziąć recruitment button i p w div żeby btn nie uciekał w prawo, ustawić w collaboration automatyczne zwiększanie szerokości p */
