@@ -938,6 +938,19 @@ header div h1 span {
     }
 }
 
+@media(orientation:portrait) and (max-height:500px) {
+    .collaboration p {
+        top: 5vh;
+        max-width: 90%;
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .collaboration button a {
+        font-size: 14px;
+    }
+}
+
 /* Kontakt */
 .contact {
     display: block;
