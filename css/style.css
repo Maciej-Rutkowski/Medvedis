@@ -1330,5 +1330,41 @@ body {
     background-color: #8C8074;
 }
 
+.joinUs {
+    position: relative;
+    top: 10vh;
+    width: 65%;
+    overflow: hidden;
+    margin: 0 17.5% 10vh;
+    background-color: #8c8074;
 
-/* Wziąć recruitment button i p w div żeby btn nie uciekał w prawo, ustawić w collaboration automatyczne zwiększanie szerokości p */
+}
+
+.joinUs h1 {
+    display: block;
+    width: 100%;
+    margin: 2.5vh 0;
+    text-align: center;
+    line-height: 8vh;
+    font-size: 36px;
+    color: white;
+    letter-spacing: 1px;
+    font-family: 'Metamorphous', cursive;
+}
+
+.joinUs img {
+    display: block;
+    max-width: 80%;
+    max-height: 65vh;
+    margin: 0 auto;
+}
+
+.joinUs p {
+    display: block;
+    margin: 5vh 5%;
+    text-align: justify;
+    hyphens: auto;
+    color: #fff;
+    font-size: 18px;
+    line-height: 30px;
+}
