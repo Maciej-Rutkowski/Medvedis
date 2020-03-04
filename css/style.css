@@ -1330,13 +1330,26 @@ body {
     background-color: #8C8074;
 }
 
+.fade {
+    animation: fade 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+
+    to {
+        opacity: 1
+    }
+}
+
 .joinUs {
     position: relative;
     top: 10vh;
-    width: 65%;
+    width: 100%;
     overflow: hidden;
-    margin: 0 17.5% 10vh;
-    background-color: #8c8074;
+    margin: 0 0 10vh;
 
 }
 
@@ -1352,19 +1365,201 @@ body {
     font-family: 'Metamorphous', cursive;
 }
 
-.joinUs img {
+/* .joinUs img, */
+.joinUs .pointer {
+    position: relative;
     display: block;
-    max-width: 80%;
-    max-height: 65vh;
-    margin: 0 auto;
+    max-height: 70vh;
+    max-width: 50%;
+    margin: 0 5% 5%;
+    box-shadow: 0 0 15px black;
+    float: left;
+    border-radius: 8px;
+}
+
+.joinUs img {
+    display: none;
+    width: 100%;
+    border-radius: 8px;
+}
+
+.joinUs img.active {
+    display: block;
+}
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -15px;
+    padding: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 22px;
+    transition: 0.6s;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.dotsContainer {
+    position: relative;
+    text-align: center;
+    top: -15px;
+}
+
+.dot {
+    position: absolute;
+    cursor: pointer;
+    height: 12px;
+    width: 12px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s;
+}
+
+.dot:first-child {
+    transform: translatex(-18px);
+}
+
+.dot:last-child {
+    transform: translatex(18px);
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
 }
 
 .joinUs p {
     display: block;
-    margin: 5vh 5%;
+    margin: 0 5%;
     text-align: justify;
     hyphens: auto;
     color: #fff;
     font-size: 18px;
     line-height: 30px;
+}
+
+.joinUs button {
+    position: absolute;
+    /* bottom: 8vh; */
+    right: 6%;
+    border: none;
+}
+
+.joinUs button a {
+    display: block;
+    text-decoration: none;
+    font-size: 18px;
+    padding: 8px 25px;
+    color: #fff;
+    border: 1px solid white;
+    background-color: #8C8074;
+    transition: .3s
+}
+
+.joinUs button a:hover {
+    background-color: #fff;
+    color: #8C8074
+}
+
+@media(max-width: 1530px) and (orientation:landscape) {
+    .joinUs div p {
+        font-size: 18px;
+        line-height: 26px;
+    }
+}
+
+@media(max-width: 1450px) and (orientation:landscape) {
+    .joinUs div p {
+        font-size: 17px;
+        line-height: 22px;
+    }
+}
+
+
+@media(max-width:1400px) and (orientation:landscape) {
+    .joinUs .pointer {
+        max-width: 50%;
+    }
+}
+
+@media(max-width: 1350px) {
+    .joinUs {
+        margin: 0 0 10vh;
+    }
+
+    .joinUs h1 {
+        margin: 5vh 0;
+    }
+
+    .joinUs .pointer {
+        max-height: 100vh;
+        max-width: 80%;
+        margin: 0 auto 5vh;
+        float: none;
+    }
+
+    .joinUs div p {
+        font-size: 16px;
+        line-height: 22px;
+        margin: 5vh 5vh 15vh;
+    }
+
+    .joinUs button {
+        bottom: 0;
+        margin-top: 10vh;
+    }
+
+    .joinUs button a {
+        font-size: 18px;
+    }
+}
+
+@media(max-width: 1100px) {
+    .joinUs {
+        top: 0;
+        padding-top: 0;
+        ;
+    }
+}
+
+@media(max-width: 700px) {
+    .joinUs div p {
+        font-size: 16px;
+        line-height: 20px;
+    }
+}
+
+@media(orientation: portrait) and (min-height:1000px) {
+    .joinUs div p {
+        line-height: 26px;
+        font-size: 18px;
+    }
+}
+
+@media(orientation: portrait) and (min-height:1300px) {
+    .joinUs div p {
+        font-size: 26px;
+        line-height: 36px;
+    }
+}
+
+@media(orientation: portrait) and (max-width:370px) {
+    .joinUs div p {
+        font-size: 14px;
+    }
 }
