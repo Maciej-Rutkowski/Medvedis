@@ -335,7 +335,8 @@ header div h1 span {
     width: 100%;
     /* height: 90vh; */
     overflow: hidden;
-    margin: 10vh 0;
+    margin: 10vh 0 0;
+    padding-bottom: 10vh;
 }
 
 .about h1 {
@@ -358,21 +359,19 @@ header div h1 span {
     float: left;
     border-radius: 8px;
 }
-
 .about div p {
     display: block;
     margin: 0 5%;
     text-align: justify;
     hyphens: auto;
     color: #fff;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 32px;
 }
 
 .about button {
-    position: absolute;
-    /* bottom: 8vh; */
-    right: 6%;
+    display: block;
+    margin: 20px 10% auto auto;
     border: none;
 }
 
@@ -391,7 +390,12 @@ header div h1 span {
     background-color: #fff;
     color: #8C8074
 }
-
+@media(max-width: 1800px){
+    .about div p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
 @media(max-width: 1530px) and (orientation:landscape) {
     .about div p {
         font-size: 18px;
@@ -416,7 +420,7 @@ header div h1 span {
 @media(max-width: 1350px) {
     .about {
         padding-top: 10vh;
-        margin: 0 0 10vh;
+        margin: 0;
     }
 
     .about h1 {
@@ -433,13 +437,13 @@ header div h1 span {
     .about div p {
         font-size: 16px;
         line-height: 22px;
-        margin: 5vh 5vh 15vh;
+        margin: 5vh 5vh 0;
     }
-
+/* 
     .about button {
         bottom: 0;
         margin-top: 10vh;
-    }
+    } */
 
     .about button a {
         font-size: 18px;
@@ -578,7 +582,7 @@ header div h1 span {
     font-family: 'Metamorphous', cursive;
 }
 
-.recruitment div img {
+.recruitment img {
     display: block;
     max-height: 70vh;
     margin: 0 5%;
@@ -586,23 +590,25 @@ header div h1 span {
     float: right;
     border-radius: 8px;
 }
-
-
-
+.recruitment div{
+    position: relative;
+}
 .recruitment div p {
     display: block;
     margin: 0 0 0 5%;
     padding: 15vh 0 0 0;
     text-align: justify;
     color: #fff;
-    font-size: 18px;
-    line-height: 30px;
+    font-size: 22px;
+    line-height: 36px;
 }
 
-.recruitment button {
-    position: absolute;
-    bottom: 25vh;
-    left: 26%;
+.recruitment div button {
+    /* position: absolute; */
+    display: block;
+    margin: 20px 10% auto auto;
+    /* bottom: 25vh; */
+    right: 26%;
     border: none;
 }
 
@@ -628,10 +634,15 @@ header div h1 span {
         line-height: 22px;
     }
 } */
-
+@media(max-width: 1700px){
+    .recruitment div p{
+        font-size: 18px;
+        line-height: 30px;
+    }
+}
 @media(max-width: 1400px) {
 
-    .recruitment div img {
+    .recruitment img {
         max-height: 100vh;
         max-width: 50%;
         /* margin: 0 auto 5vh; */
@@ -641,13 +652,13 @@ header div h1 span {
     .recruitment div p {
         /* font-size: 16px; */
         /* line-height: 22px; */
-        margin: 5vh 5vh 10vh;
+        margin: 5vh 5vh 0;
     }
 
-    .recruitment button {
+    /* .recruitment button {
         left: 20%;
         bottom: 5vw;
-    }
+    } */
 
     .recruitment button a {
         font-size: 18px;
@@ -664,7 +675,7 @@ header div h1 span {
         margin: 5vh 0;
     }
 
-    .recruitment div img {
+    .recruitment img {
         max-height: 100vh;
         max-width: 80%;
         margin: 0 auto 5vh;
@@ -675,14 +686,14 @@ header div h1 span {
         padding: 0;
         font-size: 20px;
         line-height: 28px;
-        margin: 5vh 5vh 15vh;
+        margin: 5vh 5vh 0;
     }
 
-    .recruitment button {
+    /* .recruitment button {
         left: 65%;
         bottom: 0;
         margin-top: 10vh;
-    }
+    } */
 
     .recruitment button a {
         font-size: 18px;
@@ -700,9 +711,9 @@ header div h1 span {
 }
 
 @media(max-width: 450px) {
-    .recruitment button {
+    /* .recruitment button {
         left: 46%;
-    }
+    } */
 }
 
 @media(orientation: portrait) and (max-width:500px) {
@@ -1695,6 +1706,7 @@ body {
         font-size: 40px;
         font-weight: bold;
         cursor: pointer;
+        z-index: 2;
     }
     .close:hover{
         color: #999;
