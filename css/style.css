@@ -1795,3 +1795,27 @@ body {
         padding: 15px 0;
         margin: auto;
     }
+    @media(max-width:1700px){
+        .members{
+            width: 80%;
+        }
+    }
+    @media(max-width:1500px){
+        .members{
+            width: 90%;
+        }
+    }
+    @media(max-width:1100px){
+        .members div div{
+            width: 42%;
+            margin: 2% 4%;
+            /* box-shadow: 0 0 15px #444; */
+        }
+    }
+    @media(max-width:600px){
+        .members div div{
+            width: 80%;
+            margin: 10% 10%;
+            /* box-shadow: 0 0 15px #444; */
+        }
+    }
