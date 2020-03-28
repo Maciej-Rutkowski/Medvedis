@@ -1795,7 +1795,7 @@ body {
         padding: 15px 0;
         margin: auto;
     }
-.members~.modal .modalImage{
+    .members~.modal .modalImage{
     max-height: 60%;
 }
     .clickableImg~span{
