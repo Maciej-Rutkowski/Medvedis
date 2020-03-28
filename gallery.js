@@ -1,11 +1,18 @@
 const modal = document.querySelector('.modal');
 const imgList = [...document.querySelectorAll('.clickableImg')];
 const modalImg = document.querySelector('.modalImage');
+const description = document.querySelector('.modal .text');
 
+function addDescription() {
+    description.innerHTML = null;
+    const span = document.querySelector('.active~span');
+    description.innerHTML = span.innerHTML;
+}
 function handleClick() {
     this.classList.add('active');
     modal.style.display = "block";
     modalImg.src = this.src;
+    addDescription()
 }
 
 imgList.forEach(img => {
@@ -23,6 +30,7 @@ const nextSlide = (e) => {
     }
     imgList[activeImg].classList.add('active');
     modalImg.src = imgList[activeImg].src;
+    addDescription();
 }
 
 function closeModal() {

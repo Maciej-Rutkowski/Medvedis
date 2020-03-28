@@ -1795,7 +1795,25 @@ body {
         padding: 15px 0;
         margin: auto;
     }
-    @media(max-width:1700px){
+.members~.modal .modalImage{
+    max-height: 60%;
+}
+    .clickableImg~span{
+        display: none;
+    }
+    .modal .text{
+        display: block;
+        position: absolute;
+        z-index: 3;
+        color: white;
+        top: 81vh;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 18px;
+        line-height: 26px;
+    }
+    @media(max-width:1500px){
         .members{
             width: 80%;
         }
@@ -1807,9 +1825,16 @@ body {
     }
     @media(max-width:1100px){
         .members div div{
-            width: 42%;
             margin: 2% 4%;
             /* box-shadow: 0 0 15px #444; */
+        }
+        .members~.modal .modalImage{
+            transform: translate(-50%, -70%);
+        }
+        .modal .text{
+            min-width: 95%;
+            font-size: 16px;
+            line-height: 24px;
         }
     }
     @media(max-width:600px){
@@ -1817,5 +1842,21 @@ body {
             width: 80%;
             margin: 10% 10%;
             /* box-shadow: 0 0 15px #444; */
+        }
+        .modal .text{
+            top: 78vh;
+            min-width: 95%;
+        }
+    }
+    @media(max-width:460px){
+        .modal .text{
+            top: 65vh;
+            font-size: 12px;
+            line-height: 18px;
+        }
+    }
+    @media(max-width:400px){
+        .modal .text{
+            top: 70vh;
         }
     }
