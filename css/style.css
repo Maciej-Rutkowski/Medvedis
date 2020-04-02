@@ -18,6 +18,17 @@ html {
     font-family: 'uncialAntiqua';
     src: url('UncialAntiqua-Regular.ttf');
 }
+section h1, h2{
+        display: block;
+        width: 100%;
+        margin: 2.5vh 0;
+        text-align: center;
+        line-height: 8vh;
+        font-size: 36px;
+        color: white;
+        letter-spacing: 1px;
+        font-family: 'Metamorphous', cursive;
+}
 
 /* Nawigacja */
 
@@ -339,18 +350,6 @@ header div h1 span {
     padding-bottom: 10vh;
 }
 
-.about h1 {
-    display: block;
-    width: 100%;
-    margin: 2.5vh 0;
-    text-align: center;
-    line-height: 8vh;
-    font-size: 36px;
-    color: white;
-    letter-spacing: 1px;
-    font-family: 'Metamorphous', cursive;
-}
-
 .about div img {
     display: block;
     max-height: 70vh;
@@ -423,7 +422,7 @@ header div h1 span {
         margin: 0;
     }
 
-    .about h1 {
+    .about h2 {
         margin: 5vh 0;
     }
 
@@ -570,17 +569,6 @@ header div h1 span {
     margin-bottom: 10vh;
 }
 
-.recruitment h1 {
-    display: block;
-    width: 100%;
-    margin: 2.5vh 0;
-    text-align: center;
-    line-height: 8vh;
-    font-size: 36px;
-    color: white;
-    letter-spacing: 1px;
-    font-family: 'Metamorphous', cursive;
-}
 
 .recruitment img {
     display: block;
@@ -627,13 +615,6 @@ header div h1 span {
     background-color: #fff;
     color: #8C8074
 }
-
-/* @media(max-width: 1450px) and (orientation:landscape) {
-    .recruitment div p {
-        font-size: 17px;
-        line-height: 22px;
-    }
-} */
 @media(max-width: 1700px){
     .recruitment div p{
         font-size: 18px;
@@ -645,20 +626,11 @@ header div h1 span {
     .recruitment img {
         max-height: 100vh;
         max-width: 50%;
-        /* margin: 0 auto 5vh; */
-        /* float: none; */
     }
 
     .recruitment div p {
-        /* font-size: 16px; */
-        /* line-height: 22px; */
         margin: 5vh 5vh 0;
     }
-
-    /* .recruitment button {
-        left: 20%;
-        bottom: 5vw;
-    } */
 
     .recruitment button a {
         font-size: 18px;
@@ -671,7 +643,7 @@ header div h1 span {
         margin: 0 0 10vh;
     }
 
-    .recruitment h1 {
+    .recruitment h2 {
         margin: 5vh 0;
     }
 
@@ -688,13 +660,6 @@ header div h1 span {
         line-height: 28px;
         margin: 5vh 5vh 0;
     }
-
-    /* .recruitment button {
-        left: 65%;
-        bottom: 0;
-        margin-top: 10vh;
-    } */
-
     .recruitment button a {
         font-size: 18px;
     }
@@ -711,9 +676,6 @@ header div h1 span {
 }
 
 @media(max-width: 450px) {
-    /* .recruitment button {
-        left: 46%;
-    } */
 }
 
 @media(orientation: portrait) and (max-width:500px) {
@@ -781,7 +743,6 @@ header div h1 span {
     top: 10vh;
     right: 5%;
     max-width: 27%;
-    /* height: 80%; */
     font-size: 22px;
     line-height: 32px;
     text-align: justify;
@@ -941,7 +902,6 @@ header div h1 span {
 @media(orientation:portrait) and (max-width:330px) {
     .collaboration p {
         top: 10vh;
-        /* text-align: left; */
         font-size: 14px;
         line-height: 20px;
     }
@@ -983,17 +943,19 @@ header div h1 span {
     width: 100%;
     height: 55vh;
 }
-
-.contact h1 {
+.about h1 {
     display: block;
     width: 100%;
-    margin: 5vh 0;
+    margin: 2.5vh 0;
     text-align: center;
     line-height: 8vh;
     font-size: 36px;
     color: white;
     letter-spacing: 1px;
     font-family: 'Metamorphous', cursive;
+}
+.contact h2 {
+    margin: 5vh 0;
 }
 
 .contact .media {
@@ -1033,7 +995,6 @@ header div h1 span {
 .contact .bear img {
     display: block;
     position: absolute;
-    /* margin: 5vh auto; */
     height: 15vh;
     top: 40%;
     left: 50%;
@@ -1048,8 +1009,6 @@ header div h1 span {
 
 .contact .e-mail p {
     color: #fff;
-    /* font-family: 'Metamorphous', cursive; */
-    /* font-family: roboto; */
     font-size: 36px;
     line-height: 55px;
 }
@@ -1136,7 +1095,7 @@ header div h1 span {
         height: 70vh;
     }
 
-    .contact h1 {
+    .contact h2 {
         font-size: 32px;
     }
 
@@ -1164,7 +1123,7 @@ header div h1 span {
         height: 70vh;
     }
 
-    .contact h1 {
+    .contact h2 {
         font-size: 32px;
     }
 
@@ -1231,7 +1190,7 @@ header div h1 span {
 
 @media(orientation:portrait) and (min-width:700px) {
 
-    .contact h1 {
+    .contact h2 {
         font-size: 46px;
     }
 
@@ -1291,7 +1250,7 @@ header div h1 span {
 }
 
 @media(orientation:portrait) and (max-width:385px) {
-    .contact h1 {
+    .contact h2 {
         font-size: 30px;
     }
 
@@ -1382,19 +1341,7 @@ body {
 
 }
 
-.joinUs h1 {
-    display: block;
-    width: 100%;
-    margin: 2.5vh 0;
-    text-align: center;
-    line-height: 8vh;
-    font-size: 36px;
-    color: white;
-    letter-spacing: 1px;
-    font-family: 'Metamorphous', cursive;
-}
 
-/* .joinUs img, */
 .joinUs .pointer {
     position: relative;
     display: block;
@@ -1611,17 +1558,6 @@ body {
 
 }
 
-.photos h1 {
-    display: block;
-    width: 100%;
-    margin: 2.5vh 0;
-    text-align: center;
-    line-height: 8vh;
-    font-size: 36px;
-    color: white;
-    letter-spacing: 1px;
-    font-family: 'Metamorphous', cursive;
-}
 .photos p{
     font-size: 16px;
     margin-bottom: 10px;
@@ -1744,19 +1680,6 @@ body {
         overflow: hidden;
         margin: 0 auto 20vh;
     }
-
-    .members h1 {
-        display: block;
-        width: 100%;
-        margin: 2.5vh 0;
-        text-align: center;
-        line-height: 8vh;
-        font-size: 36px;
-        color: white;
-        letter-spacing: 1px;
-        font-family: 'Metamorphous', cursive;
-    }
-
     .members h3{
         display: block;
         width: 100%;
