@@ -1833,17 +1833,17 @@ body {
         }
     }
     @media(max-width:600px){
-        .members div div{
-            width: 80%;
-            margin: 10% 10%;
-            /* box-shadow: 0 0 15px #444; */
-        }
         .modal .text{
             top: 78vh;
             min-width: 95%;
         }
     }
     @media(max-width:460px){
+        .members div div{
+            width: 80%;
+            margin: 10% 10%;
+            /* box-shadow: 0 0 15px #444; */
+        }
         .modal .text{
             top: 65vh;
             font-size: 12px;
