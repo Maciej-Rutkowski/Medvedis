@@ -13,3 +13,16 @@ $(document).ready(function () {
     scrollTop: $(section).offset().top - $(".menu").height(),
   });
 });
+$(document).ready(function () {
+  $("p, span").each(function () {
+    var text = $(this).html();
+    var letters = ["a", "i", "o", "u", "w", "z", "A", "I", "O", "U", "W", "Z"];
+    var arrayLength = letters.length;
+    for (var i = 0; i < arrayLength; i++) {
+      var textSplit = text.split(" " + letters[i] + " ");
+      var text = textSplit.join(" " + letters[i] + "&nbsp;");
+    }
+    $(this).empty();
+    $(this).html(text);
+  });
+});
