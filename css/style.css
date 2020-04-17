@@ -16,6 +16,9 @@ html {
 body {
   background-color: #8c8074;
 }
+p {
+  text-align: left !important;
+}
 
 @font-face {
   font-family: "uncialAntiqua";
