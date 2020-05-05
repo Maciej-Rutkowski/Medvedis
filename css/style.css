@@ -350,6 +350,7 @@ header div h1 span {
 .about button {
   display: block;
   margin: 20px 10% auto auto;
+  -ms-margin: 20px 10% auto auto;
   border: none;
 }
 
@@ -565,6 +566,7 @@ header div h1 span {
 .recruitment div button {
   display: block;
   margin: 20px 10% auto auto;
+  -ms-margin: 20px 10% auto auto;
   right: 26%;
   border: none;
 }
