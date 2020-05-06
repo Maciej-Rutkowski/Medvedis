@@ -350,7 +350,7 @@ header div h1 span {
 .about button {
   display: block;
   margin: 20px 10% auto auto;
-  -ms-margin: 20px 10% auto auto;
+  width: 150px;
   border: none;
 }
 
@@ -417,7 +417,9 @@ header div h1 span {
     line-height: 22px;
     margin: 5vh 5vh 0;
   }
-
+  .about button {
+    width: 150px;
+  }
   .about button a {
     font-size: 18px;
   }
@@ -566,8 +568,7 @@ header div h1 span {
 .recruitment div button {
   display: block;
   margin: 20px 10% auto auto;
-  -ms-margin: 20px 10% auto auto;
-  right: 26%;
+  width: 175px;
   border: none;
 }
 
@@ -601,7 +602,9 @@ header div h1 span {
   .recruitment div p {
     margin: 5vh 5vh 0;
   }
-
+  .recruitment div button {
+    width: 175px;
+  }
   .recruitment button a {
     font-size: 18px;
   }
@@ -630,6 +633,9 @@ header div h1 span {
     line-height: 28px;
     margin: 5vh 5vh 0;
   }
+  .recruitment div button {
+    width: 175px;
+  }
   .recruitment button a {
     font-size: 18px;
   }
@@ -639,7 +645,9 @@ header div h1 span {
   .recruitment div p {
     font-size: 14px;
   }
-
+  .recruitment div button {
+    width: 145px;
+  }
   .recruitment button a {
     font-size: 14px;
   }
@@ -665,7 +673,9 @@ header div h1 span {
   .recruitment div p {
     font-size: 14px;
   }
-
+  .recruitment div button {
+    width: 135px;
+  }
   .recruitment button a {
     font-size: 12px;
   }
@@ -675,7 +685,9 @@ header div h1 span {
   .recruitment div p {
     font-size: 22px;
   }
-
+  .recruitment div button {
+    width: 185px;
+  }
   .recruitment button a {
     font-size: 20px;
   }
@@ -686,7 +698,9 @@ header div h1 span {
     font-size: 30px;
     line-height: 38px;
   }
-
+  .recruitment div button {
+    width: 230px;
+  }
   .recruitment button a {
     font-size: 26px;
   }
