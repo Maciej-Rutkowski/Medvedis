@@ -732,12 +732,7 @@ header div h1 span {
   background-color: rgba(0, 0, 0, 0.6);
   padding: 15px 20px;
 }
-.collaboration p a {
-  text-decoration: underline;
-  color: white;
-  text-decoration: none;
-  cursor: auto;
-}
+
 .collaboration button {
   position: absolute;
   bottom: 6vh;
@@ -851,7 +846,7 @@ header div h1 span {
     font-size: 22px;
     line-height: 32px;
   }
-  .collaboration p a {
+  .collaboration p span {
     text-decoration: underline;
     cursor: pointer;
     color: #ddd;

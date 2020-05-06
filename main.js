@@ -1,5 +1,6 @@
-$("nav a, #home, #contact").on("click", function () {
+$(document).on("click", "nav a, #home, #contact", function () {
   const section = "[data-section=" + $(this).attr("id") + "]";
+  console.log("ok");
   $("body, html").animate({
     scrollTop: $(section).offset().top - $(".menu").height(),
   });
